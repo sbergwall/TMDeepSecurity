@@ -95,7 +95,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        Tags = @('Trend-Micro','Deep-Security','Deep-Security-Manager')
+        Tags = @('Trend-Micro','Deep-Security','Deep-Security-Manager','TrendMicro','DeepSecurity','DeepSecurityManager')
 
         # A URL to the license for this module.
         LicenseUri = 'https://github.com/sbergwall/TMDeepSecurity/blob/main/LICENSE'
@@ -107,7 +107,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        # ReleaseNotes = ''
+        ReleaseNotes = 'https://github.com/sbergwall/TMDeepSecurity/blob/main/CHANGELOG.md'
 
         # Prerelease string of this module
         # Prerelease = ''
