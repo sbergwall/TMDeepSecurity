@@ -95,7 +95,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        Tags = @('Trend Micro','Deep Security','Deep Security Manager')
+        Tags = @('Trend-Micro','Deep-Security','Deep-Security-Manager')
 
         # A URL to the license for this module.
         # LicenseUri = ''
