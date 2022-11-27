@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-TmdsComputer
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Modify a computer by ID in Deep Security Manager.
 
 ## SYNTAX
 
@@ -19,21 +19,42 @@ Set-TmdsComputer -ComputerId <Int32[]> [-PropertySet <String[]>] [-Description <
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Modify a computer by ID in Deep Security Manager.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Set-TmdsComputer -ComputerId 1 -Description "A Description" -DisplayName "A DisplayName"
 ```
 
-{{ Add example description here }}
+Modify Computer with Id 1 to set description to "A Description" and displayName to "A DisplayName"
+
+### Example 2
+```powershell
+PS C:\> 1,2 | Set-TmdsComputer -Description "A Description" -DisplayName "A DisplayName"
+```
+
+Modify Computer with Id 1 to set description to "A Description" and displayName to "A DisplayName"
+
+### Example 3
+```powershell
+PS C:\> Set-TmdsComputer -ComputerId 2 -Description "" -DisplayName ""
+```
+
+Removes Description and DisplayName from Computer Id 2.
+
+### Example 4
+```powershell
+PS C:\> Set-TmdsComputer -ComputerId 2 -Description $null -DisplayName $null
+```
+
+Removes Description and DisplayName from Computer Id 2.
 
 ## PARAMETERS
 
 ### -AssetImportanceId
-{{ Fill AssetImportanceId Description }}
+ID of the asset importance assigned to the computer. Set to 0, $null or "" to remove any assignment.
 
 ```yaml
 Type: Int32
@@ -48,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+The ID number of the computer to modify.
 
 ```yaml
 Type: Int32[]
@@ -63,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-{{ Fill Description Description }}
+Description of the computer.
 
 ```yaml
 Type: String
@@ -78,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-{{ Fill DisplayName Description }}
+Display name of the computer.
 
 ```yaml
 Type: String
@@ -93,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-{{ Fill GroupId Description }}
+ID of the computer group to which the computer belongs. Set to 0, $null or "" to remove any assignment.
 
 ```yaml
 Type: Int32
@@ -108,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-{{ Fill HostName Description }}
+Hostname of the computer.
 
 ```yaml
 Type: String
@@ -123,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-{{ Fill PolicyId Description }}
+ID of the policy assigned to the computer. Set to 0, $null or "" to remove any assignment.
 
 ```yaml
 Type: Int32
@@ -138,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -PropertySet
-{{ Fill PropertySet Description }}
+Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.
 
 ```yaml
 Type: String[]
@@ -154,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelayListId
-{{ Fill RelayListId Description }}
+ID of the relay list that is assigned to the computer. Set to 0, $null or "" to remove any assignment.
 
 ```yaml
 Type: Int32

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-TmdsAdministratorRole
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Creates a new Administrator Role.
 
 ## SYNTAX
 
@@ -21,21 +21,21 @@ New-TmdsAdministratorRole [[-AllComputers] <Boolean>] [[-AllowManageWorkloadSecu
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Creates a new Administrator Role. This is the same as Administration -> User Management -> Roles in the WebGUI.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> New-TmdsAdministratorRole -AllComputers $true -AllowManageWorkloadSecurityLink $false -AllowMigration $false -AllowUserInterface $true -AllowWebService $true -AllPolicies $true -CanOnlyManipulateUsersWithEqualOrLesserRights $true -Description "Description" -Name "Name of Role"
 ```
 
-{{ Add example description here }}
+Creates a new role. This is the same as creating a role at Administration -> User Management -> Roles in the WebGUI.
 
 ## PARAMETERS
 
 ### -AllComputers
-{{ Fill AllComputers Description }}
+Controls whether or not the role is allowed to access all computers.
 
 ```yaml
 Type: Boolean
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllPolicies
-{{ Fill AllPolicies Description }}
+Controls whether or not the role is allowed to access all policies.
 
 ```yaml
 Type: Boolean
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowManageWorkloadSecurityLink
-{{ Fill AllowManageWorkloadSecurityLink Description }}
+Controls whether or not the role is allowed management of Workload Security Link. 
 
 ```yaml
 Type: Boolean
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowMigration
-{{ Fill AllowMigration Description }}
+Controls whether or not the role is allowed migration to Workload Security. 
 
 ```yaml
 Type: Boolean
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowUserInterface
-{{ Fill AllowUserInterface Description }}
+Controls whether or not the role is allowed to use the user interface.
 
 ```yaml
 Type: Boolean
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowWebService
-{{ Fill AllowWebService Description }}
+Controls whether or not the role is allowed to use the web service API.
 
 ```yaml
 Type: Boolean
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -CanOnlyManipulateUsersWithEqualOrLesserRights
-{{ Fill CanOnlyManipulateUsersWithEqualOrLesserRights Description }}
+Controls whether or not the role can only manipulate users with equal or lesser rights. 
 
 ```yaml
 Type: Boolean
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerGroupIDs
-{{ Fill ComputerGroupIDs Description }}
+List of computer group IDs that the role can access. A group ID of '0' allows access to computers not in a computer group. Note that groups must be identified individually and that access to sub-groups is not automatically granted. Ignored if 'allComputers' is true.
 
 ```yaml
 Type: Int32
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerIDs
-{{ Fill ComputerIDs Description }}
+List of computer IDs that the role can access. Ignored if 'allComputers' is true.
 
 ```yaml
 Type: Int32
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-{{ Fill Description Description }}
+Description of the administrator role.
 
 ```yaml
 Type: String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-{{ Fill Name Description }}
+Name of the administrator role. 
 
 ```yaml
 Type: String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyIDs
-{{ Fill PolicyIDs Description }}
+List of policy IDs that the role can access. 
 
 ```yaml
 Type: Int32

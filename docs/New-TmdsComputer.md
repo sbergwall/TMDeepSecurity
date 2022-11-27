@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-TmdsComputer
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Create a new computer. 
 
 ## SYNTAX
 
@@ -19,21 +19,21 @@ New-TmdsComputer [[-Description] <String>] [[-DisplayName] <String>] [[-HostName
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Creates a new computer object in DSM.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> New-TmdsComputer -Description "a description" -DisplayName "dc1.company.com" -HostName "dc1.company.com" -AssetImportanceId 1 -PolicyId 1
 ```
 
-{{ Add example description here }}
+Create a new computer in DSM with Asset Importance 1 and bind policy 1 to the object.
 
 ## PARAMETERS
 
 ### -AssetImportanceId
-{{ Fill AssetImportanceId Description }}
+ID of the asset importance assigned to the computer.
 
 ```yaml
 Type: Int32
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-{{ Fill Description Description }}
+Description of the computer.
 
 ```yaml
 Type: String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-{{ Fill DisplayName Description }}
+Display name of the computer.
 
 ```yaml
 Type: String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-{{ Fill GroupId Description }}
+ID of the computer group to which the computer belongs.
 
 ```yaml
 Type: Int32
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-{{ Fill HostName Description }}
+Hostname of the computer.
 
 ```yaml
 Type: String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-{{ Fill PolicyId Description }}
+ID of the policy assigned to the computer.
 
 ```yaml
 Type: Int32
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelayListId
-{{ Fill RelayListId Description }}
+ID of the relay list that is assigned to the computer.
 
 ```yaml
 Type: Int32

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-TmdsContact
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Modify a contact.
 
 ## SYNTAX
 
@@ -20,21 +20,21 @@ Set-TmdsContact [-ContactId] <Int32> [[-Description] <String>] [[-EmailAddress] 
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Modify a contact. Any unset elements will be left unchanged. 
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Set-TmdsContact -ContactId 1 -Description "New Description" -EmailAddress "email@company.com"
 ```
 
-{{ Add example description here }}
+Set description and email adress for contact with id 1.
 
 ## PARAMETERS
 
 ### -ContactId
-{{ Fill ContactId Description }}
+The ID number of the contact to modify.
 
 ```yaml
 Type: Int32
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-{{ Fill Description Description }}
+Description of the Contact.
 
 ```yaml
 Type: String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-{{ Fill EmailAddress Description }}
+Email address of the Contact.
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Locale
-{{ Fill Locale Description }}
+Locale of the Contact.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileNumber
-{{ Fill MobileNumber Description }}
+Mobile number of the Contact.
 
 ```yaml
 Type: String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-{{ Fill Name Description }}
+Name of the Contact.
 
 ```yaml
 Type: String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PagerNumber
-{{ Fill PagerNumber Description }}
+Pager number of the Contact. 
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-{{ Fill PhoneNumber Description }}
+Phone number of the Contact. 
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportPDFPassword
-{{ Fill ReportPDFPassword Description }}
+Password that protects the reports that the Contact generates. Ignored when ReportPDFPasswordEnabled is false.
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportPDFPasswordEnabled
-{{ Fill ReportPDFPasswordEnabled Description }}
+Controls whether the reports that the Contact generates are password-protected. Set to true to password-protect, and false otherwise. 
 
 ```yaml
 Type: Boolean
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleID
-{{ Fill RoleID Description }}
+ID of the role assigned to the Contact.
 
 ```yaml
 Type: Int32

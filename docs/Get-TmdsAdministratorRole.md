@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsAdministratorRole
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Return one or more Administrator Roles from DSM. 
 
 ## SYNTAX
 
@@ -28,21 +28,35 @@ Get-TmdsAdministratorRole [-Name <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Return one or more Administrator Roles from DSM. This is the same that is found in Administrators -> User Management -> Roles in the WebGUI.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsAdministratorRole -All
 ```
 
-{{ Add example description here }}
+Return all Administrator Roles from DSM.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsAdministratorRole -AdministratorRoleId 1,2
+```
+
+Return Administrator Roles with Id 1 and Id 2.
+
+### Example 3
+```powershell
+PS C:\> Get-TmdsAdministratorRole -Name Auditor
+```
+
+Return Administrator Role with Name Auditor from DSM. If you press Ctrl + Space you get argument completer.
 
 ## PARAMETERS
 
 ### -AdministratorRoleId
-{{ Fill AdministratorRoleId Description }}
+Id of the Administrator Role you want to return.
 
 ```yaml
 Type: Int32[]
@@ -57,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -All
-{{ Fill All Description }}
+Return all Administrator Roles from DSM.
 
 ```yaml
 Type: SwitchParameter
@@ -72,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-{{ Fill Name Description }}
+Return a administrator with the Name specified. If you press Ctrl + Space you get argument completer.
 
 ```yaml
 Type: String

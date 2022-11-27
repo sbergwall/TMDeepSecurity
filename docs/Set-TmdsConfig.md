@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-TmdsConfig
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Set Config what will be used by module.
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Set-TmdsConfig [[-DeepSecurityManager] <String>] [[-APIKey] <String>] [<CommonPa
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Before you can start using the other functions, the configuration needs to be set. Point to your DSM server, including port, and set your API key.
 
 ## EXAMPLES
 
-### Example 1
+### Example
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Set-TmdsConfig -DeepSecurityManager 'https://dsm.company.pri:4119' -APIKey 'APIKeyAPIKeyAPIKeyAPIKeyAPIKeyAPIKey'
 ```
 
-{{ Add example description here }}
+Will use https://dsm.company.pri:4119 as your DeepSecurityManager and APIKeyAPIKeyAPIKeyAPIKeyAPIKeyAPIKey as your API Key.
 
 ## PARAMETERS
 
 ### -APIKey
-{{ Fill APIKey Description }}
+Your API Key.
 
 ```yaml
 Type: String
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeepSecurityManager
-{{ Fill DeepSecurityManager Description }}
+Your Deep Security Manager server, including port.
 
 ```yaml
 Type: String

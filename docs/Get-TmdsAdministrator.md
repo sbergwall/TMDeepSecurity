@@ -34,15 +34,29 @@ Get one or more Administrators from DSM. This is the same that is found in Admin
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsAdministrator -All
 ```
 
-{{ Add example description here }}
+Returns all Administrators from DSM. -All is default.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsAdministrator -AdministratorId 1,5
+```
+
+Returns administrator with Id 1 and Id 5 from DSM. 
+
+### Example 3
+```powershell
+PS C:\> Get-TmdsAdministrator -UserName Administrator
+```
+
+Returns administrator with UserName Administrator from DSM. If you press Ctrl + Space you get argument completer.
 
 ## PARAMETERS
 
 ### -AdministratorId
-{{ Fill AdministratorId Description }}
+Id of the Administrator you want to return.
 
 ```yaml
 Type: Int32[]
@@ -57,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -All
-{{ Fill All Description }}
+Return all administrators from DSM.
 
 ```yaml
 Type: SwitchParameter
@@ -72,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-{{ Fill UserName Description }}
+Return a administrator with the UserName specified.
 
 ```yaml
 Type: String

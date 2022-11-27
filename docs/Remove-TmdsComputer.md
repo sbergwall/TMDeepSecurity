@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-TmdsComputer
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Delete a computer by Id or by HostName in Deep Security Manager.
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Remove-TmdsComputer [-HostName <String>] [-WhatIf] [-Confirm] [<CommonParameters
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+You can specify either the Id or the HostName of a computer object in DSM to remove it. You can use Tab or Ctrl + Space to see all computer objects in DSM.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Remove-TmdsComputer -HostName dc1.company.com
 ```
 
-{{ Add example description here }}
+Remove computer object with hostname dc1.company.com from DSM.
+
+### Example 2
+```powershell
+PS C:\> Remove-TmdsComputer -ComputerId 1
+```
+
+Remove computer object with Id 1 from DSM.
 
 ## PARAMETERS
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+Computer objects Id in DSM.
 
 ```yaml
 Type: Int32[]
@@ -67,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-{{ Fill HostName Description }}
+HostName in DSM.
 
 ```yaml
 Type: String

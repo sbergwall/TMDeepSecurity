@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-TmdsAdministrator
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Removes a administrator.
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Remove-TmdsAdministrator [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParam
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Removes a administrator. This is the same as Administration -> User Management -> Users in the WebGUI.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Remove-TmdsAdministrator -AdministratorId 5
 ```
 
-{{ Add example description here }}
+Removes a administrator with Id 5.
+
+### Example 2
+```powershell
+PS C:\> Remove-TmdsAdministrator -UserName Administrator
+```
+
+Removes the administrator with UserName Administrator. If you press Ctrl + Space you get argument completer.
 
 ## PARAMETERS
 
 ### -AdministratorId
-{{ Fill AdministratorId Description }}
+Id of administrator.
 
 ```yaml
 Type: Int32[]
@@ -67,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-{{ Fill UserName Description }}
+UserName of administrator.
 
 ```yaml
 Type: String

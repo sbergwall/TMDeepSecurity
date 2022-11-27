@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputer
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all computer objects or get specific ones based on Computer Id in Deep Security Manager.
 
 ## SYNTAX
 
@@ -28,21 +28,35 @@ Get-TmdsComputer [-PropertySet <String[]>] [-HostName <String>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all computer objects or get specific ones based on Computer Id in Deep Security Manager.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputer
 ```
 
-{{ Add example description here }}
+Get all computer objects from Deep Security Manager.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsComputer -ComputerId 1,2
+```
+
+Get computer object with Id 1 and 2 from Deep Security Manager.
+
+### Example 3
+```powershell
+PS C:\> Get-TmdsComputer -HostName DSM.company.com
+```
+
+Get computer object with HostName DSM.company.com from Deep Security Manager.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Return all computer objects. This is the default.
 
 ```yaml
 Type: SwitchParameter
@@ -57,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+Get one or more computer objects by Id.
 
 ```yaml
 Type: Int32[]
@@ -72,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-{{ Fill HostName Description }}
+HostName in DSM.
 
 ```yaml
 Type: String
@@ -87,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -PropertySet
-{{ Fill PropertySet Description }}
+Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.
 
 ```yaml
 Type: String[]

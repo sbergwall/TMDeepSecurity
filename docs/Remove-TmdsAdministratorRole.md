@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-TmdsAdministratorRole
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Removes a role.
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Remove-TmdsAdministratorRole [-Name <String>] [-WhatIf] [-Confirm] [<CommonParam
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Removes a role. This is the same as Administration -> User Management -> Roles in the WebGUI.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Remove-TmdsAdministratorRole -AdministratorRoleId 5
 ```
 
-{{ Add example description here }}
+Removes role with Id 5.
+
+### Example 2
+```powershell
+PS C:\> Remove-TmdsAdministratorRole -Name "Auditor"
+```
+
+Removes role with Name Auditor. If you press Ctrl + Space you get argument completer.
 
 ## PARAMETERS
 
 ### -AdministratorRoleId
-{{ Fill AdministratorRoleId Description }}
+Id of role.
 
 ```yaml
 Type: Int32[]
@@ -67,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-{{ Fill Name Description }}
+Name of role.
 
 ```yaml
 Type: String

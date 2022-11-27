@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsAgentVersionControlProfiles
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Lists agent version control profiles. 
 
 ## SYNTAX
 
@@ -23,21 +23,21 @@ Get-TmdsAgentVersionControlProfiles [-AgentVersionControlProfilesId <Int32>] [<C
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Lists agent version control profiles. 
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsAgentVersionControlProfiles
 ```
 
-{{ Add example description here }}
+Lists all agent version control profiles. 
 
 ## PARAMETERS
 
 ### -AgentVersionControlProfilesId
-{{ Fill AgentVersionControlProfilesId Description }}
+List an Agent Version Control Profile by ID. 
 
 ```yaml
 Type: Int32
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -All
-{{ Fill All Description }}
+Lists all agent version control profiles. 
 
 ```yaml
 Type: SwitchParameter
