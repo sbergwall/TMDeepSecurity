@@ -2,11 +2,11 @@
 PowerShell Module for interacting with Trend Micro Deep Security API
 
 
-Trend Micro Deep Security is a Powershell module for interacting with the API for Deep Security Manager (DSM).
+TMDeepSecurity is a Powershell module for interacting with the API for Trend Micro Deep Security Manager.
 
 ## Getting started
 
-First you will need to create an API key from DSM. Go to Administration -> User Management -> API Keys and create you API key.
+First you will need to create an API key from Deep Security Manager (DSM). Go to Administration -> User Management -> API Keys and create you API key.
 
 Start with setting your variables that will be used by most, if not all, functions.
 
