@@ -2,7 +2,7 @@ function Get-TmdsComputerIntegrityMonitoringRule {
     [Alias('')]
     param (
         [parameter(
-            ParameterSetName = 'ById', 
+            ParameterSetName = 'ById',
             ValueFromPipeline = $true,
             ValueFromPipelineByPropertyName = $true,
             Mandatory = $true)]

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputerFirewallRule
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get firewall rules assigned to a computer.
 
 ## SYNTAX
 
@@ -17,21 +17,28 @@ Get-TmdsComputerFirewallRule -ComputerId <Int32[]> [-FirewallRuleId <Int32>] [<C
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all or specific firewall rule assigned to a computer.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputerFirewallRule -ComputerId 1
 ```
 
-{{ Add example description here }}
+Get all firewall rules assigned to computer with Id 1.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsComputerFirewallRule -ComputerId 1 -FirewallRuleId 72
+```
+
+Get firewall rule with Id 71 assigned to computer with Id 1.
 
 ## PARAMETERS
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+Computer Id
 
 ```yaml
 Type: Int32[]
@@ -46,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallRuleId
-{{ Fill FirewallRuleId Description }}
+Firewall Rule Id
 
 ```yaml
 Type: Int32

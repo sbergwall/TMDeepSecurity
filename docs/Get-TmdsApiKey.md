@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsApiKey
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get API Keys
 
 ## SYNTAX
 
@@ -28,21 +28,21 @@ Get-TmdsApiKey [-Current] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get API Keys from Deep Security Manager
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsApiKey
 ```
 
-{{ Add example description here }}
+Get all API Keys from Deep Security Manager
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Get all API Keys from Deep Security Manager
 
 ```yaml
 Type: SwitchParameter
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiKeyId
-{{ Fill ApiKeyId Description }}
+Get API Key with specific Id from Deep Security Manager
 
 ```yaml
 Type: Int32[]
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Current
-{{ Fill Current Description }}
+Get the API key that is associated with the credentials that are being used to authenticate this call. Authentication must be done via an API secret key.
 
 ```yaml
 Type: SwitchParameter

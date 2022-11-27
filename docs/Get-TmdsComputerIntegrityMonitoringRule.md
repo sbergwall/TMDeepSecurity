@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputerIntegrityMonitoringRule
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all or specific integrity monitoring rules assigned to a computer.
 
 ## SYNTAX
 
@@ -18,21 +18,21 @@ Get-TmdsComputerIntegrityMonitoringRule -ComputerId <Int32[]> [-IntegrityMonitor
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all or specific integrity monitoring rules assigned to a computer.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputerIntegrityMonitoringRule -ComputerId 1
 ```
 
-{{ Add example description here }}
+Get all integrity monitoring rules for Computer Id 1.
 
 ## PARAMETERS
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+Computer Id
 
 ```yaml
 Type: Int32[]
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntegrityMonitoringRuleID
-{{ Fill IntegrityMonitoringRuleID Description }}
+Integrity Monitoring Rule Id
 
 ```yaml
 Type: Int32

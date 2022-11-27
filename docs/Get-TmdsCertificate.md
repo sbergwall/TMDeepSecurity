@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsCertificate
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get SSL certificates.
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Get-TmdsCertificate [-CertificateId <Int32[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get SSL certificates.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsCertificate
 ```
 
-{{ Add example description here }}
+Get all SSL certificates.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsCertificate -CertificateId 2
+```
+
+Get SSL certificate with Id 2.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Get all SSL certificates.
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateId
-{{ Fill CertificateId Description }}
+Get SSL certificate with specific Id.
 
 ```yaml
 Type: Int32[]

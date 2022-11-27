@@ -44,7 +44,7 @@ Returns all Administrators from DSM. -All is default.
 PS C:\> Get-TmdsAdministrator -AdministratorId 1,5
 ```
 
-Returns administrator with Id 1 and Id 5 from DSM. 
+Returns administrator with Id 1 and Id 5 from DSM.
 
 ### Example 3
 ```powershell

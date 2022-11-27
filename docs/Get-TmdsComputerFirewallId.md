@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputerFirewallId
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all firewall rule IDs assigned to a computer.
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Get-TmdsComputerFirewallId -ComputerId <Int32[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all firewall rule IDs assigned to a computer.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputerFirewallId -ComputerId 1
 ```
 
-{{ Add example description here }}
+Get the firewall rules for ComputerId 1.
 
 ## PARAMETERS
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+Computer Id in Deep Security Manager
 
 ```yaml
 Type: Int32[]

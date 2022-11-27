@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputerGroup
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all or specific computer groups.
 
 ## SYNTAX
 
@@ -23,21 +23,21 @@ Get-TmdsComputerGroup [-ComputerGroupId <Int32[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all or specific computer groups.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputerGroup
 ```
 
-{{ Add example description here }}
+Get all Computer Groups
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Get all Computer Groups
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerGroupId
-{{ Fill ComputerGroupId Description }}
+Get Computer Group based on Id.
 
 ```yaml
 Type: Int32[]

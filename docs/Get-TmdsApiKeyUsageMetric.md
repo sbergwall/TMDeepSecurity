@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsApiKeyUsageMetric
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all API usage metrics.
 
 ## SYNTAX
 
@@ -17,16 +17,16 @@ Get-TmdsApiKeyUsageMetric [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all API usage metrics from Deep Security Manager
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\>  Get-TmdsApiKeyUsageMetric
 ```
 
-{{ Add example description here }}
+Get all API usage metrics from Deep Security Manager
 
 ## PARAMETERS
 
