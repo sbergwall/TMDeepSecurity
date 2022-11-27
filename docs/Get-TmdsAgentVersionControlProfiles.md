@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsAgentVersionControlProfiles
 
 ## SYNOPSIS
-Lists agent version control profiles. 
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -23,21 +23,21 @@ Get-TmdsAgentVersionControlProfiles [-AgentVersionControlProfilesId <Int32>] [<C
 ```
 
 ## DESCRIPTION
-Lists agent version control profiles. 
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Get-TmdsAgentVersionControlProfiles
+PS C:\> {{ Add example code here }}
 ```
 
-Lists all agent version control profiles. 
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -AgentVersionControlProfilesId
-List an Agent Version Control Profile by ID. 
+{{ Fill AgentVersionControlProfilesId Description }}
 
 ```yaml
 Type: Int32
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -All
-Lists all agent version control profiles. 
+{{ Fill All Description }}
 
 ```yaml
 Type: SwitchParameter

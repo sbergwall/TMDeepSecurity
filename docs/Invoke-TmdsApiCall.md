@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Type: Object
 Parameter Sets: (All)
 Aliases:
-Accepted values: Get, Put, Post
+Accepted values: Get, Put, Post, Delete
 
 Required: False
 Position: 3

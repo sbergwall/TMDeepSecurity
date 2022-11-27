@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputer
 
 ## SYNOPSIS
-Get all computer objects or get specific ones based on Computer Id in Deep Security Manager.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -28,35 +28,21 @@ Get-TmdsComputer [-PropertySet <String[]>] [-HostName <String>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-Get all computer objects or get specific ones based on Computer Id in Deep Security Manager.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Get-TmdsComputer
+PS C:\> {{ Add example code here }}
 ```
 
-Get all computer objects from Deep Security Manager.
-
-### Example 2
-```powershell
-PS C:\> Get-TmdsComputer -ComputerId 1,2
-```
-
-Get computer object with Id 1 and 2 from Deep Security Manager.
-
-### Example 3
-```powershell
-PS C:\> Get-TmdsComputer -HostName DSM.company.com
-```
-
-Get computer object with HostName DSM.company.com from Deep Security Manager.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -All
-Return all computer objects. This is the default.
+{{ Fill All Description }}
 
 ```yaml
 Type: SwitchParameter
@@ -71,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerId
-Get one or more computer objects by Id.
+{{ Fill ComputerId Description }}
 
 ```yaml
 Type: Int32[]
@@ -85,14 +71,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PropertySet
-Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.
+### -HostName
+{{ Fill HostName Description }}
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
+Type: String
+Parameter Sets: ByHostName
 Aliases:
-Accepted values: none, all, computerStatus, tasks, securityUpdates, computerSettings, allSecurityModules, antiMalware, webReputation, activityMonitoring, firewall, intrusionPrevention, integrityMonitoring, logInspection, applicationControl, SAP, interfaces, ESXSummary, allVirtualMachineSummaries, azureARMVirtualMachineSummary, azureVMVirtualMachineSummary, ec2VirtualMachineSummary, noConnectorVirtualMachineSummary, vmwareVMVirtualMachineSummary, vcloudVMVirtualMachineSummary, workspaceVirtualMachineSummary, gcpVirtualMachineSummary
 
 Required: False
 Position: Named
@@ -101,13 +86,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -HostName
-HostName in DSM.
+### -PropertySet
+{{ Fill PropertySet Description }}
 
 ```yaml
-Type: String
-Parameter Sets: ByHostName
+Type: String[]
+Parameter Sets: (All)
 Aliases:
+Accepted values: none, all, computerStatus, tasks, securityUpdates, computerSettings, allSecurityModules, antiMalware, webReputation, activityMonitoring, firewall, intrusionPrevention, integrityMonitoring, logInspection, applicationControl, SAP, interfaces, ESXSummary, allVirtualMachineSummaries, azureARMVirtualMachineSummary, azureVMVirtualMachineSummary, ec2VirtualMachineSummary, noConnectorVirtualMachineSummary, vmwareVMVirtualMachineSummary, vcloudVMVirtualMachineSummary, workspaceVirtualMachineSummary, gcpVirtualMachineSummary
 
 Required: False
 Position: Named

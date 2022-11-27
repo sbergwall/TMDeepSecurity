@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---

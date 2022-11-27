@@ -18,7 +18,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>AdministratorId</maml:name>
           <maml:description>
-            <maml:para>Id of the Administrator you want to return.</maml:para>
+            <maml:para>{{ Fill AdministratorId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -33,7 +33,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>Return all administrators from DSM.</maml:para>
+            <maml:para>{{ Fill All Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -47,7 +47,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UserName</maml:name>
           <maml:description>
-            <maml:para>Return a administrator with the UserName specified.</maml:para>
+            <maml:para>{{ Fill UserName Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -62,7 +62,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>AdministratorId</maml:name>
         <maml:description>
-          <maml:para>Id of the Administrator you want to return.</maml:para>
+          <maml:para>{{ Fill AdministratorId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -74,7 +74,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>Return all administrators from DSM.</maml:para>
+          <maml:para>{{ Fill All Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -86,7 +86,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UserName</maml:name>
         <maml:description>
-          <maml:para>Return a administrator with the UserName specified.</maml:para>
+          <maml:para>{{ Fill UserName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -124,23 +124,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsAdministrator -All</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Returns all Administrators from DSM. -All is default.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsAdministrator -AdministratorId 1,5</dev:code>
-        <dev:remarks>
-          <maml:para>Returns administrator with Id 1 and Id 5 from DSM.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsAdministrator -UserName Administrator</dev:code>
-        <dev:remarks>
-          <maml:para>Returns administrator with UserName Administrator from DSM. If you press Ctrl + Space you get argument completer.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -152,11 +138,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsAdministratorRole</command:noun>
       <maml:description>
-        <maml:para>Return one or more Administrator Roles from DSM.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Return one or more Administrator Roles from DSM. This is the same that is found in Administrators -&gt; User Management -&gt; Roles in the WebGUI.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -164,7 +150,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="RoleId, Id">
           <maml:name>AdministratorRoleId</maml:name>
           <maml:description>
-            <maml:para>Id of the Administrator Role you want to return.</maml:para>
+            <maml:para>{{ Fill AdministratorRoleId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -179,7 +165,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>Return all Administrator Roles from DSM.</maml:para>
+            <maml:para>{{ Fill All Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -193,7 +179,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Return a administrator with the Name specified. If you press Ctrl + Space you get argument completer.</maml:para>
+            <maml:para>{{ Fill Name Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -208,7 +194,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="RoleId, Id">
         <maml:name>AdministratorRoleId</maml:name>
         <maml:description>
-          <maml:para>Id of the Administrator Role you want to return.</maml:para>
+          <maml:para>{{ Fill AdministratorRoleId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -220,7 +206,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>Return all Administrator Roles from DSM.</maml:para>
+          <maml:para>{{ Fill All Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -232,7 +218,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Return a administrator with the Name specified. If you press Ctrl + Space you get argument completer.</maml:para>
+          <maml:para>{{ Fill Name Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -270,23 +256,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsAdministratorRole -All</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Return all Administrator Roles from DSM.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsAdministratorRole -AdministratorRoleId 1,2</dev:code>
-        <dev:remarks>
-          <maml:para>Return Administrator Roles with Id 1 and Id 2.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsAdministratorRole -Name Auditor</dev:code>
-        <dev:remarks>
-          <maml:para>Return Administrator Role with Name Auditor from DSM. If you press Ctrl + Space you get argument completer.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -298,11 +270,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsAgentVersionControlProfiles</command:noun>
       <maml:description>
-        <maml:para>Lists agent version control profiles.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Lists agent version control profiles.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -310,7 +282,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>AgentVersionControlProfilesId</maml:name>
           <maml:description>
-            <maml:para>List an Agent Version Control Profile by ID.</maml:para>
+            <maml:para>{{ Fill AgentVersionControlProfilesId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -325,7 +297,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>Lists all agent version control profiles.</maml:para>
+            <maml:para>{{ Fill All Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -339,7 +311,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>AgentVersionControlProfilesId</maml:name>
         <maml:description>
-          <maml:para>List an Agent Version Control Profile by ID.</maml:para>
+          <maml:para>{{ Fill AgentVersionControlProfilesId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -351,7 +323,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>Lists all agent version control profiles.</maml:para>
+          <maml:para>{{ Fill All Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -389,9 +361,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsAgentVersionControlProfiles</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Lists all agent version control profiles.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -798,11 +770,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsComputer</command:noun>
       <maml:description>
-        <maml:para>Get all computer objects or get specific ones based on Computer Id in Deep Security Manager.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Get all computer objects or get specific ones based on Computer Id in Deep Security Manager.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -810,7 +782,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>Return all computer objects. This is the default.</maml:para>
+            <maml:para>{{ Fill All Description }}</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -821,7 +793,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PropertySet</maml:name>
           <maml:description>
-            <maml:para>Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.</maml:para>
+            <maml:para>{{ Fill PropertySet Description }}</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">none</command:parameterValue>
@@ -865,7 +837,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="Id">
           <maml:name>ComputerId</maml:name>
           <maml:description>
-            <maml:para>Get one or more computer objects by Id.</maml:para>
+            <maml:para>{{ Fill ComputerId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -877,7 +849,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PropertySet</maml:name>
           <maml:description>
-            <maml:para>Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.</maml:para>
+            <maml:para>{{ Fill PropertySet Description }}</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">none</command:parameterValue>
@@ -919,9 +891,21 @@
       <command:syntaxItem>
         <maml:name>Get-TmdsComputer</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HostName</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill HostName Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PropertySet</maml:name>
           <maml:description>
-            <maml:para>Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.</maml:para>
+            <maml:para>{{ Fill PropertySet Description }}</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">none</command:parameterValue>
@@ -959,25 +943,13 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>HostName</maml:name>
-          <maml:description>
-            <maml:para>HostName in DSM.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>Return all computer objects. This is the default.</maml:para>
+          <maml:para>{{ Fill All Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -989,7 +961,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="Id">
         <maml:name>ComputerId</maml:name>
         <maml:description>
-          <maml:para>Get one or more computer objects by Id.</maml:para>
+          <maml:para>{{ Fill ComputerId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -999,25 +971,25 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>PropertySet</maml:name>
+        <maml:name>HostName</maml:name>
         <maml:description>
-          <maml:para>Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.</maml:para>
+          <maml:para>{{ Fill HostName Description }}</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
-          <maml:name>String[]</maml:name>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>HostName</maml:name>
+        <maml:name>PropertySet</maml:name>
         <maml:description>
-          <maml:para>HostName in DSM.</maml:para>
+          <maml:para>{{ Fill PropertySet Description }}</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
         <dev:type>
-          <maml:name>String</maml:name>
+          <maml:name>String[]</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -1051,23 +1023,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsComputer</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Get all computer objects from Deep Security Manager.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsComputer -ComputerId 1,2</dev:code>
-        <dev:remarks>
-          <maml:para>Get computer object with Id 1 and 2 from Deep Security Manager.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-TmdsComputer -HostName DSM.company.com</dev:code>
-        <dev:remarks>
-          <maml:para>Get computer object with HostName DSM.company.com from Deep Security Manager.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -4238,6 +4196,7 @@
             <command:parameterValue required="false" command:variableLength="false">Get</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">Put</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">Post</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Delete</command:parameterValue>
           </command:parameterValueGroup>
           <command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
           <dev:type>
@@ -4471,11 +4430,11 @@
       <command:verb>New</command:verb>
       <command:noun>TmdsAdministrator</command:noun>
       <maml:description>
-        <maml:para>Create a new Administrator in DSM.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Create a new Administrator in DSM. This is the same as Administrator -&gt; User Management -&gt; Users in the WebGUI.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -4483,7 +4442,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>Active</maml:name>
           <maml:description>
-            <maml:para>If set to true, the Administrator can authenticate. If set to false, the Administrator is locked out.</maml:para>
+            <maml:para>{{ Fill Active Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -4495,7 +4454,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the Administrator.</maml:para>
+            <maml:para>{{ Fill Description Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -4507,7 +4466,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
           <maml:name>PhoneNumber</maml:name>
           <maml:description>
-            <maml:para>Phone number of the Administrator.</maml:para>
+            <maml:para>{{ Fill PhoneNumber Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -4519,7 +4478,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="11" aliases="none">
           <maml:name>PrimaryContact</maml:name>
           <maml:description>
-            <maml:para>If set to true, the administrator is a primary contact. Primary contacts receive Deep Security as a Service account-related emails for that tenant. A valid emailAddress is required.</maml:para>
+            <maml:para>{{ Fill PrimaryContact Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -4531,7 +4490,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="12" aliases="none">
           <maml:name>ReceiveNotifications</maml:name>
           <maml:description>
-            <maml:para>If set to true, alert emails will be sent to the Administrator. A valid emailAddress is required.</maml:para>
+            <maml:para>{{ Fill ReceiveNotifications Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -4543,7 +4502,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="13" aliases="none">
           <maml:name>ReportPDFPassword</maml:name>
           <maml:description>
-            <maml:para>Password that protects the reports that the Administrator generates.</maml:para>
+            <maml:para>{{ Fill ReportPDFPassword Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
           <dev:type>
@@ -4555,7 +4514,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="14" aliases="none">
           <maml:name>ReportPDFPasswordEnabled</maml:name>
           <maml:description>
-            <maml:para>Controls whether the reports that the Administrator generates are password-protected. Set to true to password-protect, and false otherwise. Defaults to false.</maml:para>
+            <maml:para>{{ Fill ReportPDFPasswordEnabled Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -4567,7 +4526,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="15" aliases="none">
           <maml:name>RoleID</maml:name>
           <maml:description>
-            <maml:para>ID of the role assigned to the Administrator.</maml:para>
+            <maml:para>{{ Fill RoleID Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -4579,7 +4538,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="16" aliases="none">
           <maml:name>TimeFormat</maml:name>
           <maml:description>
-            <maml:para>Time format preference of the Administrator. Can be either the 12-hour format or the 24-hour format.</maml:para>
+            <maml:para>{{ Fill TimeFormat Description }}</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">12</command:parameterValue>
@@ -4595,7 +4554,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="17" aliases="none">
           <maml:name>TimeZone</maml:name>
           <maml:description>
-            <maml:para>Time zone of the Administrator.</maml:para>
+            <maml:para>{{ Fill TimeZone Description }}</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">Africa/Abidjan</command:parameterValue>
@@ -5051,7 +5010,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="18" aliases="none">
           <maml:name>Username</maml:name>
           <maml:description>
-            <maml:para>Username of the Administrator.</maml:para>
+            <maml:para>{{ Fill Username Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5063,7 +5022,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="19" aliases="none">
           <maml:name>UTCOffset</maml:name>
           <maml:description>
-            <maml:para>UTC offset of the Administrator.</maml:para>
+            <maml:para>{{ Fill UTCOffset Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5075,7 +5034,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>EmailAddress</maml:name>
           <maml:description>
-            <maml:para>Email address of the Administrator.</maml:para>
+            <maml:para>{{ Fill EmailAddress Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5087,7 +5046,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
           <maml:name>FullName</maml:name>
           <maml:description>
-            <maml:para>Full name of the Administrator.</maml:para>
+            <maml:para>{{ Fill FullName Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5099,7 +5058,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
           <maml:name>Locale</maml:name>
           <maml:description>
-            <maml:para>Locale of the Administrator.</maml:para>
+            <maml:para>{{ Fill Locale Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5111,7 +5070,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
           <maml:name>MfaType</maml:name>
           <maml:description>
-            <maml:para>Specifies the type of multi-factor authentication used to authenticate the Administrator. Defaults to none.</maml:para>
+            <maml:para>{{ Fill MfaType Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5123,7 +5082,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
           <maml:name>MobileNumber</maml:name>
           <maml:description>
-            <maml:para>Mobile number of the Administrator.</maml:para>
+            <maml:para>{{ Fill MobileNumber Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5135,7 +5094,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
           <maml:name>PagerNumber</maml:name>
           <maml:description>
-            <maml:para>Pager number of the Administrator.</maml:para>
+            <maml:para>{{ Fill PagerNumber Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5147,7 +5106,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
           <maml:name>Password</maml:name>
           <maml:description>
-            <maml:para>Password of the Administrator.</maml:para>
+            <maml:para>{{ Fill Password Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5159,7 +5118,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
           <maml:name>PasswordNeverExpires</maml:name>
           <maml:description>
-            <maml:para>Enabled if the Administrator's password never expires. Defaults to false.</maml:para>
+            <maml:para>{{ Fill PasswordNeverExpires Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5174,7 +5133,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>Active</maml:name>
         <maml:description>
-          <maml:para>If set to true, the Administrator can authenticate. If set to false, the Administrator is locked out.</maml:para>
+          <maml:para>{{ Fill Active Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5186,7 +5145,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the Administrator.</maml:para>
+          <maml:para>{{ Fill Description Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5198,7 +5157,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
         <maml:name>EmailAddress</maml:name>
         <maml:description>
-          <maml:para>Email address of the Administrator.</maml:para>
+          <maml:para>{{ Fill EmailAddress Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5210,7 +5169,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
         <maml:name>FullName</maml:name>
         <maml:description>
-          <maml:para>Full name of the Administrator.</maml:para>
+          <maml:para>{{ Fill FullName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5222,7 +5181,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
         <maml:name>Locale</maml:name>
         <maml:description>
-          <maml:para>Locale of the Administrator.</maml:para>
+          <maml:para>{{ Fill Locale Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5234,7 +5193,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
         <maml:name>MfaType</maml:name>
         <maml:description>
-          <maml:para>Specifies the type of multi-factor authentication used to authenticate the Administrator. Defaults to none.</maml:para>
+          <maml:para>{{ Fill MfaType Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5246,7 +5205,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
         <maml:name>MobileNumber</maml:name>
         <maml:description>
-          <maml:para>Mobile number of the Administrator.</maml:para>
+          <maml:para>{{ Fill MobileNumber Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5258,7 +5217,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
         <maml:name>PagerNumber</maml:name>
         <maml:description>
-          <maml:para>Pager number of the Administrator.</maml:para>
+          <maml:para>{{ Fill PagerNumber Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5270,7 +5229,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
         <maml:name>Password</maml:name>
         <maml:description>
-          <maml:para>Password of the Administrator.</maml:para>
+          <maml:para>{{ Fill Password Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5282,7 +5241,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
         <maml:name>PasswordNeverExpires</maml:name>
         <maml:description>
-          <maml:para>Enabled if the Administrator's password never expires. Defaults to false.</maml:para>
+          <maml:para>{{ Fill PasswordNeverExpires Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5294,7 +5253,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
         <maml:name>PhoneNumber</maml:name>
         <maml:description>
-          <maml:para>Phone number of the Administrator.</maml:para>
+          <maml:para>{{ Fill PhoneNumber Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5306,7 +5265,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="11" aliases="none">
         <maml:name>PrimaryContact</maml:name>
         <maml:description>
-          <maml:para>If set to true, the administrator is a primary contact. Primary contacts receive Deep Security as a Service account-related emails for that tenant. A valid emailAddress is required.</maml:para>
+          <maml:para>{{ Fill PrimaryContact Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5318,7 +5277,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="12" aliases="none">
         <maml:name>ReceiveNotifications</maml:name>
         <maml:description>
-          <maml:para>If set to true, alert emails will be sent to the Administrator. A valid emailAddress is required.</maml:para>
+          <maml:para>{{ Fill ReceiveNotifications Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5330,7 +5289,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="13" aliases="none">
         <maml:name>ReportPDFPassword</maml:name>
         <maml:description>
-          <maml:para>Password that protects the reports that the Administrator generates.</maml:para>
+          <maml:para>{{ Fill ReportPDFPassword Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
         <dev:type>
@@ -5342,7 +5301,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="14" aliases="none">
         <maml:name>ReportPDFPasswordEnabled</maml:name>
         <maml:description>
-          <maml:para>Controls whether the reports that the Administrator generates are password-protected. Set to true to password-protect, and false otherwise. Defaults to false.</maml:para>
+          <maml:para>{{ Fill ReportPDFPasswordEnabled Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5354,7 +5313,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="15" aliases="none">
         <maml:name>RoleID</maml:name>
         <maml:description>
-          <maml:para>ID of the role assigned to the Administrator.</maml:para>
+          <maml:para>{{ Fill RoleID Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -5366,7 +5325,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="16" aliases="none">
         <maml:name>TimeFormat</maml:name>
         <maml:description>
-          <maml:para>Time format preference of the Administrator. Can be either the 12-hour format or the 24-hour format.</maml:para>
+          <maml:para>{{ Fill TimeFormat Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5378,7 +5337,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="17" aliases="none">
         <maml:name>TimeZone</maml:name>
         <maml:description>
-          <maml:para>Time zone of the Administrator.</maml:para>
+          <maml:para>{{ Fill TimeZone Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5390,7 +5349,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="19" aliases="none">
         <maml:name>UTCOffset</maml:name>
         <maml:description>
-          <maml:para>UTC offset of the Administrator.</maml:para>
+          <maml:para>{{ Fill UTCOffset Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5402,7 +5361,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="18" aliases="none">
         <maml:name>Username</maml:name>
         <maml:description>
-          <maml:para>Username of the Administrator.</maml:para>
+          <maml:para>{{ Fill Username Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5440,9 +5399,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-TmdsAdministrator -Active $true -Description "Description" -EmailAddress "a@email.com" -FullName "Full Name" -Locale "en-US" -MobileNumber "123456789" -PasswordNeverExpires $true -Password "ASecretPassWord" -TimeFormat 24 -TimeZone Africa/Accra -Username "UserName" -RoleID 1</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Creates a new Administrator in DSM. This is the same as Administrator -&gt; User Management -&gt; Users in the WebGUI.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -5454,11 +5413,11 @@
       <command:verb>New</command:verb>
       <command:noun>TmdsAdministratorRole</command:noun>
       <maml:description>
-        <maml:para>Creates a new Administrator Role.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Creates a new Administrator Role. This is the same as Administration -&gt; User Management -&gt; Roles in the WebGUI.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -5466,7 +5425,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>AllComputers</maml:name>
           <maml:description>
-            <maml:para>Controls whether or not the role is allowed to access all computers.</maml:para>
+            <maml:para>{{ Fill AllComputers Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5478,7 +5437,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>AllowManageWorkloadSecurityLink</maml:name>
           <maml:description>
-            <maml:para>Controls whether or not the role is allowed management of Workload Security Link.</maml:para>
+            <maml:para>{{ Fill AllowManageWorkloadSecurityLink Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5490,7 +5449,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the administrator role.</maml:para>
+            <maml:para>{{ Fill Name Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5502,7 +5461,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="11" aliases="none">
           <maml:name>PolicyIDs</maml:name>
           <maml:description>
-            <maml:para>List of policy IDs that the role can access.</maml:para>
+            <maml:para>{{ Fill PolicyIDs Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -5514,7 +5473,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>AllowMigration</maml:name>
           <maml:description>
-            <maml:para>Controls whether or not the role is allowed migration to Workload Security.</maml:para>
+            <maml:para>{{ Fill AllowMigration Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5526,7 +5485,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
           <maml:name>AllowUserInterface</maml:name>
           <maml:description>
-            <maml:para>Controls whether or not the role is allowed to use the user interface.</maml:para>
+            <maml:para>{{ Fill AllowUserInterface Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5538,7 +5497,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
           <maml:name>AllowWebService</maml:name>
           <maml:description>
-            <maml:para>Controls whether or not the role is allowed to use the web service API.</maml:para>
+            <maml:para>{{ Fill AllowWebService Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5550,7 +5509,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
           <maml:name>AllPolicies</maml:name>
           <maml:description>
-            <maml:para>Controls whether or not the role is allowed to access all policies.</maml:para>
+            <maml:para>{{ Fill AllPolicies Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5562,7 +5521,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
           <maml:name>CanOnlyManipulateUsersWithEqualOrLesserRights</maml:name>
           <maml:description>
-            <maml:para>Controls whether or not the role can only manipulate users with equal or lesser rights.</maml:para>
+            <maml:para>{{ Fill CanOnlyManipulateUsersWithEqualOrLesserRights Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -5574,7 +5533,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
           <maml:name>ComputerGroupIDs</maml:name>
           <maml:description>
-            <maml:para>List of computer group IDs that the role can access. A group ID of '0' allows access to computers not in a computer group. Note that groups must be identified individually and that access to sub-groups is not automatically granted. Ignored if 'allComputers' is true.</maml:para>
+            <maml:para>{{ Fill ComputerGroupIDs Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -5586,7 +5545,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
           <maml:name>ComputerIDs</maml:name>
           <maml:description>
-            <maml:para>List of computer IDs that the role can access. Ignored if 'allComputers' is true.</maml:para>
+            <maml:para>{{ Fill ComputerIDs Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -5598,7 +5557,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the administrator role.</maml:para>
+            <maml:para>{{ Fill Description Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -5613,7 +5572,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>AllComputers</maml:name>
         <maml:description>
-          <maml:para>Controls whether or not the role is allowed to access all computers.</maml:para>
+          <maml:para>{{ Fill AllComputers Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5625,7 +5584,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
         <maml:name>AllPolicies</maml:name>
         <maml:description>
-          <maml:para>Controls whether or not the role is allowed to access all policies.</maml:para>
+          <maml:para>{{ Fill AllPolicies Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5637,7 +5596,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>AllowManageWorkloadSecurityLink</maml:name>
         <maml:description>
-          <maml:para>Controls whether or not the role is allowed management of Workload Security Link.</maml:para>
+          <maml:para>{{ Fill AllowManageWorkloadSecurityLink Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5649,7 +5608,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
         <maml:name>AllowMigration</maml:name>
         <maml:description>
-          <maml:para>Controls whether or not the role is allowed migration to Workload Security.</maml:para>
+          <maml:para>{{ Fill AllowMigration Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5661,7 +5620,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
         <maml:name>AllowUserInterface</maml:name>
         <maml:description>
-          <maml:para>Controls whether or not the role is allowed to use the user interface.</maml:para>
+          <maml:para>{{ Fill AllowUserInterface Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5673,7 +5632,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
         <maml:name>AllowWebService</maml:name>
         <maml:description>
-          <maml:para>Controls whether or not the role is allowed to use the web service API.</maml:para>
+          <maml:para>{{ Fill AllowWebService Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5685,7 +5644,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
         <maml:name>CanOnlyManipulateUsersWithEqualOrLesserRights</maml:name>
         <maml:description>
-          <maml:para>Controls whether or not the role can only manipulate users with equal or lesser rights.</maml:para>
+          <maml:para>{{ Fill CanOnlyManipulateUsersWithEqualOrLesserRights Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -5697,7 +5656,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
         <maml:name>ComputerGroupIDs</maml:name>
         <maml:description>
-          <maml:para>List of computer group IDs that the role can access. A group ID of '0' allows access to computers not in a computer group. Note that groups must be identified individually and that access to sub-groups is not automatically granted. Ignored if 'allComputers' is true.</maml:para>
+          <maml:para>{{ Fill ComputerGroupIDs Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -5709,7 +5668,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
         <maml:name>ComputerIDs</maml:name>
         <maml:description>
-          <maml:para>List of computer IDs that the role can access. Ignored if 'allComputers' is true.</maml:para>
+          <maml:para>{{ Fill ComputerIDs Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -5721,7 +5680,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the administrator role.</maml:para>
+          <maml:para>{{ Fill Description Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5733,7 +5692,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Name of the administrator role.</maml:para>
+          <maml:para>{{ Fill Name Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -5745,7 +5704,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="11" aliases="none">
         <maml:name>PolicyIDs</maml:name>
         <maml:description>
-          <maml:para>List of policy IDs that the role can access.</maml:para>
+          <maml:para>{{ Fill PolicyIDs Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -5783,9 +5742,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-TmdsAdministratorRole -AllComputers $true -AllowManageWorkloadSecurityLink $false -AllowMigration $false -AllowUserInterface $true -AllowWebService $true -AllPolicies $true -CanOnlyManipulateUsersWithEqualOrLesserRights $true -Description "Description" -Name "Name of Role"</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Creates a new role. This is the same as creating a role at Administration -&gt; User Management -&gt; Roles in the WebGUI.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -7230,11 +7189,11 @@
       <command:verb>New</command:verb>
       <command:noun>TmdsComputer</command:noun>
       <maml:description>
-        <maml:para>Create a new computer.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Creates a new computer object in DSM.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -7242,7 +7201,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the computer.</maml:para>
+            <maml:para>{{ Fill Description Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -7254,7 +7213,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>DisplayName</maml:name>
           <maml:description>
-            <maml:para>Display name of the computer.</maml:para>
+            <maml:para>{{ Fill DisplayName Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -7266,7 +7225,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>HostName</maml:name>
           <maml:description>
-            <maml:para>Hostname of the computer.</maml:para>
+            <maml:para>{{ Fill HostName Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -7278,7 +7237,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
           <maml:name>GroupId</maml:name>
           <maml:description>
-            <maml:para>ID of the computer group to which the computer belongs.</maml:para>
+            <maml:para>{{ Fill GroupId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -7290,7 +7249,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
           <maml:name>AssetImportanceId</maml:name>
           <maml:description>
-            <maml:para>ID of the asset importance assigned to the computer.</maml:para>
+            <maml:para>{{ Fill AssetImportanceId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -7302,7 +7261,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
           <maml:name>PolicyId</maml:name>
           <maml:description>
-            <maml:para>ID of the policy assigned to the computer.</maml:para>
+            <maml:para>{{ Fill PolicyId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -7314,7 +7273,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
           <maml:name>RelayListId</maml:name>
           <maml:description>
-            <maml:para>ID of the relay list that is assigned to the computer.</maml:para>
+            <maml:para>{{ Fill RelayListId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -7329,7 +7288,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
         <maml:name>AssetImportanceId</maml:name>
         <maml:description>
-          <maml:para>ID of the asset importance assigned to the computer.</maml:para>
+          <maml:para>{{ Fill AssetImportanceId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -7341,7 +7300,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the computer.</maml:para>
+          <maml:para>{{ Fill Description Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -7353,7 +7312,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>DisplayName</maml:name>
         <maml:description>
-          <maml:para>Display name of the computer.</maml:para>
+          <maml:para>{{ Fill DisplayName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -7365,7 +7324,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
         <maml:name>GroupId</maml:name>
         <maml:description>
-          <maml:para>ID of the computer group to which the computer belongs.</maml:para>
+          <maml:para>{{ Fill GroupId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -7377,7 +7336,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
         <maml:name>HostName</maml:name>
         <maml:description>
-          <maml:para>Hostname of the computer.</maml:para>
+          <maml:para>{{ Fill HostName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -7389,7 +7348,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
         <maml:name>PolicyId</maml:name>
         <maml:description>
-          <maml:para>ID of the policy assigned to the computer.</maml:para>
+          <maml:para>{{ Fill PolicyId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -7401,7 +7360,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
         <maml:name>RelayListId</maml:name>
         <maml:description>
-          <maml:para>ID of the relay list that is assigned to the computer.</maml:para>
+          <maml:para>{{ Fill RelayListId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -7439,9 +7398,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-TmdsComputer -Description "a description" -DisplayName "dc1.company.com" -HostName "dc1.company.com" -AssetImportanceId 1 -PolicyId 1</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Create a new computer in DSM with Asset Importance 1 and bind policy 1 to the object.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -8085,11 +8044,11 @@
       <command:verb>Remove</command:verb>
       <command:noun>TmdsAdministrator</command:noun>
       <maml:description>
-        <maml:para>Removes a administrator.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Removes a administrator. This is the same as Administration -&gt; User Management -&gt; Users in the WebGUI.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -8097,7 +8056,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>AdministratorId</maml:name>
           <maml:description>
-            <maml:para>Id of administrator.</maml:para>
+            <maml:para>{{ Fill AdministratorId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -8145,7 +8104,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UserName</maml:name>
           <maml:description>
-            <maml:para>UserName of administrator.</maml:para>
+            <maml:para>{{ Fill UserName Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -8171,7 +8130,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>AdministratorId</maml:name>
         <maml:description>
-          <maml:para>Id of administrator.</maml:para>
+          <maml:para>{{ Fill AdministratorId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -8195,7 +8154,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UserName</maml:name>
         <maml:description>
-          <maml:para>UserName of administrator.</maml:para>
+          <maml:para>{{ Fill UserName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -8245,16 +8204,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-TmdsAdministrator -AdministratorId 5</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Removes a administrator with Id 5.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-TmdsAdministrator -UserName Administrator</dev:code>
-        <dev:remarks>
-          <maml:para>Removes the administrator with UserName Administrator. If you press Ctrl + Space you get argument completer.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -8266,11 +8218,11 @@
       <command:verb>Remove</command:verb>
       <command:noun>TmdsAdministratorRole</command:noun>
       <maml:description>
-        <maml:para>Removes a role.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Removes a role. This is the same as Administration -&gt; User Management -&gt; Roles in the WebGUI.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -8278,7 +8230,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id, RoleId">
           <maml:name>AdministratorRoleId</maml:name>
           <maml:description>
-            <maml:para>Id of role.</maml:para>
+            <maml:para>{{ Fill AdministratorRoleId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -8326,7 +8278,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of role.</maml:para>
+            <maml:para>{{ Fill Name Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -8352,7 +8304,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id, RoleId">
         <maml:name>AdministratorRoleId</maml:name>
         <maml:description>
-          <maml:para>Id of role.</maml:para>
+          <maml:para>{{ Fill AdministratorRoleId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -8376,7 +8328,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Name of role.</maml:para>
+          <maml:para>{{ Fill Name Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -8426,16 +8378,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-TmdsAdministratorRole -AdministratorRoleId 5</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Removes role with Id 5.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-TmdsAdministratorRole -Name "Auditor"</dev:code>
-        <dev:remarks>
-          <maml:para>Removes role with Name Auditor. If you press Ctrl + Space you get argument completer.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -8568,15 +8513,94 @@
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
+      <command:name>Remove-TmdsComment</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>TmdsComment</command:noun>
+      <maml:description>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>{{ Fill in the Description }}</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-TmdsComment</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>Object</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill Object Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+          <dev:type>
+            <maml:name>Object</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>Object</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill Object Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+        <dev:type>
+          <maml:name>Object</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:remarks>
+          <maml:para>{{ Add example description here }}</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
       <command:name>Remove-TmdsComputer</command:name>
       <command:verb>Remove</command:verb>
       <command:noun>TmdsComputer</command:noun>
       <maml:description>
-        <maml:para>Delete a computer by Id or by HostName in Deep Security Manager.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>You can specify either the Id or the HostName of a computer object in DSM to remove it. You can use Tab or Ctrl + Space to see all computer objects in DSM.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -8584,7 +8608,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>ComputerId</maml:name>
           <maml:description>
-            <maml:para>Computer objects Id in DSM.</maml:para>
+            <maml:para>{{ Fill ComputerId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -8632,7 +8656,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>HostName</maml:name>
           <maml:description>
-            <maml:para>HostName in DSM.</maml:para>
+            <maml:para>{{ Fill HostName Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -8658,7 +8682,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>ComputerId</maml:name>
         <maml:description>
-          <maml:para>Computer objects Id in DSM.</maml:para>
+          <maml:para>{{ Fill ComputerId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -8682,7 +8706,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>HostName</maml:name>
         <maml:description>
-          <maml:para>HostName in DSM.</maml:para>
+          <maml:para>{{ Fill HostName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -8732,16 +8756,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-TmdsComputer -HostName dc1.company.com</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Remove computer object with hostname dc1.company.com from DSM.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-TmdsComputer -ComputerId 1</dev:code>
-        <dev:remarks>
-          <maml:para>Remove computer object with Id 1 from DSM.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -11642,19 +11659,31 @@
       <command:verb>Set</command:verb>
       <command:noun>TmdsComputer</command:noun>
       <maml:description>
-        <maml:para>Modify a computer by ID in Deep Security Manager.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Modify a computer by ID in Deep Security Manager.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Set-TmdsComputer</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AssetImportanceId</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill AssetImportanceId Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>ComputerId</maml:name>
           <maml:description>
-            <maml:para>The ID number of the computer to modify.</maml:para>
+            <maml:para>{{ Fill ComputerId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -11666,7 +11695,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the computer.</maml:para>
+            <maml:para>{{ Fill Description Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -11678,7 +11707,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>DisplayName</maml:name>
           <maml:description>
-            <maml:para>Display name of the computer.</maml:para>
+            <maml:para>{{ Fill DisplayName Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -11688,9 +11717,45 @@
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>GroupId</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill GroupId Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HostName</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill HostName Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PolicyId</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill PolicyId Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PropertySet</maml:name>
           <maml:description>
-            <maml:para>Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.</maml:para>
+            <maml:para>{{ Fill PropertySet Description }}</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">none</command:parameterValue>
@@ -11729,57 +11794,9 @@
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>AssetImportanceId</maml:name>
-          <maml:description>
-            <maml:para>ID of the asset importance assigned to the computer. Set to 0, $null or "" to remove any assignment.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
-          <dev:type>
-            <maml:name>Int32</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>GroupId</maml:name>
-          <maml:description>
-            <maml:para>ID of the computer group to which the computer belongs. Set to 0, $null or "" to remove any assignment.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
-          <dev:type>
-            <maml:name>Int32</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>HostName</maml:name>
-          <maml:description>
-            <maml:para>Hostname of the computer.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>PolicyId</maml:name>
-          <maml:description>
-            <maml:para>ID of the policy assigned to the computer. Set to 0, $null or "" to remove any assignment.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
-          <dev:type>
-            <maml:name>Int32</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RelayListId</maml:name>
           <maml:description>
-            <maml:para>ID of the relay list that is assigned to the computer. Set to 0, $null or "" to remove any assignment.</maml:para>
+            <maml:para>{{ Fill RelayListId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -11791,10 +11808,22 @@
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AssetImportanceId</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill AssetImportanceId Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>ComputerId</maml:name>
         <maml:description>
-          <maml:para>The ID number of the computer to modify.</maml:para>
+          <maml:para>{{ Fill ComputerId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -11806,7 +11835,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the computer.</maml:para>
+          <maml:para>{{ Fill Description Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -11818,7 +11847,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>DisplayName</maml:name>
         <maml:description>
-          <maml:para>Display name of the computer.</maml:para>
+          <maml:para>{{ Fill DisplayName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -11828,33 +11857,9 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>PropertySet</maml:name>
-        <maml:description>
-          <maml:para>Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
-        <dev:type>
-          <maml:name>String[]</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>AssetImportanceId</maml:name>
-        <maml:description>
-          <maml:para>ID of the asset importance assigned to the computer. Set to 0, $null or "" to remove any assignment.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
-        <dev:type>
-          <maml:name>Int32</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>GroupId</maml:name>
         <maml:description>
-          <maml:para>ID of the computer group to which the computer belongs. Set to 0, $null or "" to remove any assignment.</maml:para>
+          <maml:para>{{ Fill GroupId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -11866,7 +11871,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>HostName</maml:name>
         <maml:description>
-          <maml:para>Hostname of the computer.</maml:para>
+          <maml:para>{{ Fill HostName Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -11878,7 +11883,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>PolicyId</maml:name>
         <maml:description>
-          <maml:para>ID of the policy assigned to the computer. Set to 0, $null or "" to remove any assignment.</maml:para>
+          <maml:para>{{ Fill PolicyId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -11888,9 +11893,21 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PropertySet</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill PropertySet Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RelayListId</maml:name>
         <maml:description>
-          <maml:para>ID of the relay list that is assigned to the computer. Set to 0, $null or "" to remove any assignment.</maml:para>
+          <maml:para>{{ Fill RelayListId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -11928,30 +11945,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Set-TmdsComputer -ComputerId 1 -Description "A Description" -DisplayName "A DisplayName"</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Modify Computer with Id 1 to set description to "A Description" and displayName to "A DisplayName"</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; 1,2 | Set-TmdsComputer -Description "A Description" -DisplayName "A DisplayName"</dev:code>
-        <dev:remarks>
-          <maml:para>Modify Computer with Id 1 to set description to "A Description" and displayName to "A DisplayName"</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Set-TmdsComputer -ComputerId 2 -Description "" -DisplayName ""</dev:code>
-        <dev:remarks>
-          <maml:para>Removes Description and DisplayName from Computer Id 2.</maml:para>
-        </dev:remarks>
-      </command:example>
-      <command:example>
-        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Set-TmdsComputer -ComputerId 2 -Description $null -DisplayName $null</dev:code>
-        <dev:remarks>
-          <maml:para>Removes Description and DisplayName from Computer Id 2.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -11963,11 +11959,11 @@
       <command:verb>Set</command:verb>
       <command:noun>TmdsConfig</command:noun>
       <maml:description>
-        <maml:para>Set Config what will be used by module.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Before you can start using the other functions, the configuration needs to be set. Point to your DSM server, including port, and set your API key.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -11975,7 +11971,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>DeepSecurityManager</maml:name>
           <maml:description>
-            <maml:para>Your Deep Security Manager server, including port.</maml:para>
+            <maml:para>{{ Fill DeepSecurityManager Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -11987,7 +11983,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>APIKey</maml:name>
           <maml:description>
-            <maml:para>Your API Key.</maml:para>
+            <maml:para>{{ Fill APIKey Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12002,7 +11998,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>APIKey</maml:name>
         <maml:description>
-          <maml:para>Your API Key.</maml:para>
+          <maml:para>{{ Fill APIKey Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12014,7 +12010,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>DeepSecurityManager</maml:name>
         <maml:description>
-          <maml:para>Your Deep Security Manager server, including port.</maml:para>
+          <maml:para>{{ Fill DeepSecurityManager Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12051,10 +12047,10 @@
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>--------------------------- Example ---------------------------</maml:title>
-        <dev:code>PS C:\&gt; Set-TmdsConfig -DeepSecurityManager 'https://dsm.company.pri:4119' -APIKey 'APIKeyAPIKeyAPIKeyAPIKeyAPIKeyAPIKey'</dev:code>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Will use https://dsm.company.pri:4119 as your DeepSecurityManager and APIKeyAPIKeyAPIKeyAPIKeyAPIKeyAPIKey as your API Key.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -12066,11 +12062,11 @@
       <command:verb>Set</command:verb>
       <command:noun>TmdsContact</command:noun>
       <maml:description>
-        <maml:para>Modify a contact.</maml:para>
+        <maml:para>{{ Fill in the Synopsis }}</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Modify a contact. Any unset elements will be left unchanged.</maml:para>
+      <maml:para>{{ Fill in the Description }}</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -12078,7 +12074,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>ContactId</maml:name>
           <maml:description>
-            <maml:para>The ID number of the contact to modify.</maml:para>
+            <maml:para>{{ Fill ContactId Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -12090,7 +12086,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the Contact.</maml:para>
+            <maml:para>{{ Fill Description Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12102,7 +12098,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
           <maml:name>RoleID</maml:name>
           <maml:description>
-            <maml:para>ID of the role assigned to the Contact.</maml:para>
+            <maml:para>{{ Fill RoleID Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -12114,7 +12110,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>EmailAddress</maml:name>
           <maml:description>
-            <maml:para>Email address of the Contact.</maml:para>
+            <maml:para>{{ Fill EmailAddress Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12126,7 +12122,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
           <maml:name>Locale</maml:name>
           <maml:description>
-            <maml:para>Locale of the Contact.</maml:para>
+            <maml:para>{{ Fill Locale Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12138,7 +12134,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
           <maml:name>MobileNumber</maml:name>
           <maml:description>
-            <maml:para>Mobile number of the Contact.</maml:para>
+            <maml:para>{{ Fill MobileNumber Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12150,7 +12146,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the Contact.</maml:para>
+            <maml:para>{{ Fill Name Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12162,7 +12158,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
           <maml:name>PagerNumber</maml:name>
           <maml:description>
-            <maml:para>Pager number of the Contact.</maml:para>
+            <maml:para>{{ Fill PagerNumber Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12174,7 +12170,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
           <maml:name>PhoneNumber</maml:name>
           <maml:description>
-            <maml:para>Phone number of the Contact.</maml:para>
+            <maml:para>{{ Fill PhoneNumber Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12186,7 +12182,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
           <maml:name>ReportPDFPassword</maml:name>
           <maml:description>
-            <maml:para>Password that protects the reports that the Contact generates. Ignored when ReportPDFPasswordEnabled is false.</maml:para>
+            <maml:para>{{ Fill ReportPDFPassword Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -12198,7 +12194,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
           <maml:name>ReportPDFPasswordEnabled</maml:name>
           <maml:description>
-            <maml:para>Controls whether the reports that the Contact generates are password-protected. Set to true to password-protect, and false otherwise.</maml:para>
+            <maml:para>{{ Fill ReportPDFPasswordEnabled Description }}</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -12213,7 +12209,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>ContactId</maml:name>
         <maml:description>
-          <maml:para>The ID number of the contact to modify.</maml:para>
+          <maml:para>{{ Fill ContactId Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -12225,7 +12221,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the Contact.</maml:para>
+          <maml:para>{{ Fill Description Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12237,7 +12233,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
         <maml:name>EmailAddress</maml:name>
         <maml:description>
-          <maml:para>Email address of the Contact.</maml:para>
+          <maml:para>{{ Fill EmailAddress Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12249,7 +12245,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
         <maml:name>Locale</maml:name>
         <maml:description>
-          <maml:para>Locale of the Contact.</maml:para>
+          <maml:para>{{ Fill Locale Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12261,7 +12257,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
         <maml:name>MobileNumber</maml:name>
         <maml:description>
-          <maml:para>Mobile number of the Contact.</maml:para>
+          <maml:para>{{ Fill MobileNumber Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12273,7 +12269,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Name of the Contact.</maml:para>
+          <maml:para>{{ Fill Name Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12285,7 +12281,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
         <maml:name>PagerNumber</maml:name>
         <maml:description>
-          <maml:para>Pager number of the Contact.</maml:para>
+          <maml:para>{{ Fill PagerNumber Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12297,7 +12293,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
         <maml:name>PhoneNumber</maml:name>
         <maml:description>
-          <maml:para>Phone number of the Contact.</maml:para>
+          <maml:para>{{ Fill PhoneNumber Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12309,7 +12305,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
         <maml:name>ReportPDFPassword</maml:name>
         <maml:description>
-          <maml:para>Password that protects the reports that the Contact generates. Ignored when ReportPDFPasswordEnabled is false.</maml:para>
+          <maml:para>{{ Fill ReportPDFPassword Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -12321,7 +12317,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
         <maml:name>ReportPDFPasswordEnabled</maml:name>
         <maml:description>
-          <maml:para>Controls whether the reports that the Contact generates are password-protected. Set to true to password-protect, and false otherwise.</maml:para>
+          <maml:para>{{ Fill ReportPDFPasswordEnabled Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -12333,7 +12329,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="10" aliases="none">
         <maml:name>RoleID</maml:name>
         <maml:description>
-          <maml:para>ID of the role assigned to the Contact.</maml:para>
+          <maml:para>{{ Fill RoleID Description }}</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -12371,9 +12367,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Set-TmdsContact -ContactId 1 -Description "New Description" -EmailAddress "email@company.com"</dev:code>
+        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
         <dev:remarks>
-          <maml:para>Set description and email adress for contact with id 1.</maml:para>
+          <maml:para>{{ Add example description here }}</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>

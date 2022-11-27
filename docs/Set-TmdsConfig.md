@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-TmdsConfig
 
 ## SYNOPSIS
-Set Config what will be used by module.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Set-TmdsConfig [[-DeepSecurityManager] <String>] [[-APIKey] <String>] [<CommonPa
 ```
 
 ## DESCRIPTION
-Before you can start using the other functions, the configuration needs to be set. Point to your DSM server, including port, and set your API key.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
-### Example
+### Example 1
 ```powershell
-PS C:\> Set-TmdsConfig -DeepSecurityManager 'https://dsm.company.pri:4119' -APIKey 'APIKeyAPIKeyAPIKeyAPIKeyAPIKeyAPIKey'
+PS C:\> {{ Add example code here }}
 ```
 
-Will use https://dsm.company.pri:4119 as your DeepSecurityManager and APIKeyAPIKeyAPIKeyAPIKeyAPIKeyAPIKey as your API Key.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -APIKey
-Your API Key.
+{{ Fill APIKey Description }}
 
 ```yaml
 Type: String
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeepSecurityManager
-Your Deep Security Manager server, including port.
+{{ Fill DeepSecurityManager Description }}
 
 ```yaml
 Type: String

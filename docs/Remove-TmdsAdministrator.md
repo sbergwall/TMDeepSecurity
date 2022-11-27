@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-TmdsAdministrator
 
 ## SYNOPSIS
-Removes a administrator.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -23,28 +23,21 @@ Remove-TmdsAdministrator [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParam
 ```
 
 ## DESCRIPTION
-Removes a administrator. This is the same as Administration -> User Management -> Users in the WebGUI.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Remove-TmdsAdministrator -AdministratorId 5
+PS C:\> {{ Add example code here }}
 ```
 
-Removes a administrator with Id 5.
-
-### Example 2
-```powershell
-PS C:\> Remove-TmdsAdministrator -UserName Administrator
-```
-
-Removes the administrator with UserName Administrator. If you press Ctrl + Space you get argument completer.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -AdministratorId
-Id of administrator.
+{{ Fill AdministratorId Description }}
 
 ```yaml
 Type: Int32[]
@@ -74,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-UserName of administrator.
+{{ Fill UserName Description }}
 
 ```yaml
 Type: String

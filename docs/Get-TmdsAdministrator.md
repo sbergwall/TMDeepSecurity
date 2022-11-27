@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -34,29 +34,15 @@ Get one or more Administrators from DSM. This is the same that is found in Admin
 
 ### Example 1
 ```powershell
-PS C:\> Get-TmdsAdministrator -All
+PS C:\> {{ Add example code here }}
 ```
 
-Returns all Administrators from DSM. -All is default.
-
-### Example 2
-```powershell
-PS C:\> Get-TmdsAdministrator -AdministratorId 1,5
-```
-
-Returns administrator with Id 1 and Id 5 from DSM. 
-
-### Example 3
-```powershell
-PS C:\> Get-TmdsAdministrator -UserName Administrator
-```
-
-Returns administrator with UserName Administrator from DSM. If you press Ctrl + Space you get argument completer.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -AdministratorId
-Id of the Administrator you want to return.
+{{ Fill AdministratorId Description }}
 
 ```yaml
 Type: Int32[]
@@ -71,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -All
-Return all administrators from DSM.
+{{ Fill All Description }}
 
 ```yaml
 Type: SwitchParameter
@@ -86,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-Return a administrator with the UserName specified.
+{{ Fill UserName Description }}
 
 ```yaml
 Type: String

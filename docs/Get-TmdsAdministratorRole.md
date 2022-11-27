@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsAdministratorRole
 
 ## SYNOPSIS
-Return one or more Administrator Roles from DSM. 
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -28,35 +28,21 @@ Get-TmdsAdministratorRole [-Name <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Return one or more Administrator Roles from DSM. This is the same that is found in Administrators -> User Management -> Roles in the WebGUI.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Get-TmdsAdministratorRole -All
+PS C:\> {{ Add example code here }}
 ```
 
-Return all Administrator Roles from DSM.
-
-### Example 2
-```powershell
-PS C:\> Get-TmdsAdministratorRole -AdministratorRoleId 1,2
-```
-
-Return Administrator Roles with Id 1 and Id 2.
-
-### Example 3
-```powershell
-PS C:\> Get-TmdsAdministratorRole -Name Auditor
-```
-
-Return Administrator Role with Name Auditor from DSM. If you press Ctrl + Space you get argument completer.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -AdministratorRoleId
-Id of the Administrator Role you want to return.
+{{ Fill AdministratorRoleId Description }}
 
 ```yaml
 Type: Int32[]
@@ -71,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -All
-Return all Administrator Roles from DSM.
+{{ Fill All Description }}
 
 ```yaml
 Type: SwitchParameter
@@ -86,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Return a administrator with the Name specified. If you press Ctrl + Space you get argument completer.
+{{ Fill Name Description }}
 
 ```yaml
 Type: String

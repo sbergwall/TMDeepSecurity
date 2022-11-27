@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-TmdsComputer
 
 ## SYNOPSIS
-Delete a computer by Id or by HostName in Deep Security Manager.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -23,28 +23,21 @@ Remove-TmdsComputer [-HostName <String>] [-WhatIf] [-Confirm] [<CommonParameters
 ```
 
 ## DESCRIPTION
-You can specify either the Id or the HostName of a computer object in DSM to remove it. You can use Tab or Ctrl + Space to see all computer objects in DSM.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Remove-TmdsComputer -HostName dc1.company.com
+PS C:\> {{ Add example code here }}
 ```
 
-Remove computer object with hostname dc1.company.com from DSM.
-
-### Example 2
-```powershell
-PS C:\> Remove-TmdsComputer -ComputerId 1
-```
-
-Remove computer object with Id 1 from DSM.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -ComputerId
-Computer objects Id in DSM.
+{{ Fill ComputerId Description }}
 
 ```yaml
 Type: Int32[]
@@ -74,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-HostName in DSM.
+{{ Fill HostName Description }}
 
 ```yaml
 Type: String

@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-TmdsAdministratorRole
 
 ## SYNOPSIS
-Removes a role.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -23,28 +23,21 @@ Remove-TmdsAdministratorRole [-Name <String>] [-WhatIf] [-Confirm] [<CommonParam
 ```
 
 ## DESCRIPTION
-Removes a role. This is the same as Administration -> User Management -> Roles in the WebGUI.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Remove-TmdsAdministratorRole -AdministratorRoleId 5
+PS C:\> {{ Add example code here }}
 ```
 
-Removes role with Id 5.
-
-### Example 2
-```powershell
-PS C:\> Remove-TmdsAdministratorRole -Name "Auditor"
-```
-
-Removes role with Name Auditor. If you press Ctrl + Space you get argument completer.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -AdministratorRoleId
-Id of role.
+{{ Fill AdministratorRoleId Description }}
 
 ```yaml
 Type: Int32[]
@@ -74,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of role.
+{{ Fill Name Description }}
 
 ```yaml
 Type: String

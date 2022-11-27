@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-TmdsAdministrator
 
 ## SYNOPSIS
-Create a new Administrator in DSM.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -22,21 +22,21 @@ New-TmdsAdministrator [[-Active] <Boolean>] [[-Description] <String>] [[-EmailAd
 ```
 
 ## DESCRIPTION
-Create a new Administrator in DSM. This is the same as Administrator -> User Management -> Users in the WebGUI.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> New-TmdsAdministrator -Active $true -Description "Description" -EmailAddress "a@email.com" -FullName "Full Name" -Locale "en-US" -MobileNumber "123456789" -PasswordNeverExpires $true -Password "ASecretPassWord" -TimeFormat 24 -TimeZone Africa/Accra -Username "UserName" -RoleID 1
+PS C:\> {{ Add example code here }}
 ```
 
-Creates a new Administrator in DSM. This is the same as Administrator -> User Management -> Users in the WebGUI.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -Active
-If set to true, the Administrator can authenticate. If set to false, the Administrator is locked out. 
+{{ Fill Active Description }}
 
 ```yaml
 Type: Boolean
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the Administrator.
+{{ Fill Description Description }}
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Email address of the Administrator.
+{{ Fill EmailAddress Description }}
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullName
-Full name of the Administrator.
+{{ Fill FullName Description }}
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Locale
-Locale of the Administrator.
+{{ Fill Locale Description }}
 
 ```yaml
 Type: String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -MfaType
-Specifies the type of multi-factor authentication used to authenticate the Administrator. Defaults to none. 
+{{ Fill MfaType Description }}
 
 ```yaml
 Type: String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileNumber
-Mobile number of the Administrator.
+{{ Fill MobileNumber Description }}
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -PagerNumber
-Pager number of the Administrator.
+{{ Fill PagerNumber Description }}
 
 ```yaml
 Type: String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Password of the Administrator.
+{{ Fill Password Description }}
 
 ```yaml
 Type: String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordNeverExpires
-Enabled if the Administrator's password never expires. Defaults to false.
+{{ Fill PasswordNeverExpires Description }}
 
 ```yaml
 Type: Boolean
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-Phone number of the Administrator. 
+{{ Fill PhoneNumber Description }}
 
 ```yaml
 Type: String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryContact
-If set to true, the administrator is a primary contact. Primary contacts receive Deep Security as a Service account-related emails for that tenant. A valid emailAddress is required. 
+{{ Fill PrimaryContact Description }}
 
 ```yaml
 Type: Boolean
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReceiveNotifications
-If set to true, alert emails will be sent to the Administrator. A valid emailAddress is required. 
+{{ Fill ReceiveNotifications Description }}
 
 ```yaml
 Type: Boolean
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportPDFPassword
-Password that protects the reports that the Administrator generates.
+{{ Fill ReportPDFPassword Description }}
 
 ```yaml
 Type: SecureString
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportPDFPasswordEnabled
-Controls whether the reports that the Administrator generates are password-protected. Set to true to password-protect, and false otherwise. Defaults to false.
+{{ Fill ReportPDFPasswordEnabled Description }}
 
 ```yaml
 Type: Boolean
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleID
-ID of the role assigned to the Administrator.
+{{ Fill RoleID Description }}
 
 ```yaml
 Type: Int32
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeFormat
-Time format preference of the Administrator. Can be either the 12-hour format or the 24-hour format. 
+{{ Fill TimeFormat Description }}
 
 ```yaml
 Type: String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeZone
-Time zone of the Administrator. 
+{{ Fill TimeZone Description }}
 
 ```yaml
 Type: String
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -UTCOffset
-UTC offset of the Administrator.
+{{ Fill UTCOffset Description }}
 
 ```yaml
 Type: String
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -Username
-Username of the Administrator. 
+{{ Fill Username Description }}
 
 ```yaml
 Type: String

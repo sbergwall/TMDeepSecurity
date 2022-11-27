@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-TmdsComputer
 
 ## SYNOPSIS
-Modify a computer by ID in Deep Security Manager.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -19,42 +19,36 @@ Set-TmdsComputer -ComputerId <Int32[]> [-PropertySet <String[]>] [-Description <
 ```
 
 ## DESCRIPTION
-Modify a computer by ID in Deep Security Manager.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Set-TmdsComputer -ComputerId 1 -Description "A Description" -DisplayName "A DisplayName"
+PS C:\> {{ Add example code here }}
 ```
 
-Modify Computer with Id 1 to set description to "A Description" and displayName to "A DisplayName"
-
-### Example 2
-```powershell
-PS C:\> 1,2 | Set-TmdsComputer -Description "A Description" -DisplayName "A DisplayName"
-```
-
-Modify Computer with Id 1 to set description to "A Description" and displayName to "A DisplayName"
-
-### Example 3
-```powershell
-PS C:\> Set-TmdsComputer -ComputerId 2 -Description "" -DisplayName ""
-```
-
-Removes Description and DisplayName from Computer Id 2.
-
-### Example 4
-```powershell
-PS C:\> Set-TmdsComputer -ComputerId 2 -Description $null -DisplayName $null
-```
-
-Removes Description and DisplayName from Computer Id 2.
+{{ Add example description here }}
 
 ## PARAMETERS
 
+### -AssetImportanceId
+{{ Fill AssetImportanceId Description }}
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ComputerId
-The ID number of the computer to modify.
+{{ Fill ComputerId Description }}
 
 ```yaml
 Type: Int32[]
@@ -69,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the computer.
+{{ Fill Description Description }}
 
 ```yaml
 Type: String
@@ -84,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the computer.
+{{ Fill DisplayName Description }}
 
 ```yaml
 Type: String
@@ -98,39 +92,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PropertySet
-Determines the computer information to include in the response. Use "none" to retrieve only basic computer information such as policyID and hostName.
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases:
-Accepted values: none, all, computerStatus, tasks, securityUpdates, computerSettings, allSecurityModules, antiMalware, webReputation, activityMonitoring, firewall, intrusionPrevention, integrityMonitoring, logInspection, applicationControl, SAP, interfaces, ESXSummary, allVirtualMachineSummaries, azureARMVirtualMachineSummary, azureVMVirtualMachineSummary, ec2VirtualMachineSummary, noConnectorVirtualMachineSummary, vmwareVMVirtualMachineSummary, vcloudVMVirtualMachineSummary, workspaceVirtualMachineSummary, gcpVirtualMachineSummary
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AssetImportanceId
-ID of the asset importance assigned to the computer. Set to 0, $null or "" to remove any assignment.
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -GroupId
-ID of the computer group to which the computer belongs. Set to 0, $null or "" to remove any assignment.
+{{ Fill GroupId Description }}
 
 ```yaml
 Type: Int32
@@ -145,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Hostname of the computer.
+{{ Fill HostName Description }}
 
 ```yaml
 Type: String
@@ -160,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-ID of the policy assigned to the computer. Set to 0, $null or "" to remove any assignment.
+{{ Fill PolicyId Description }}
 
 ```yaml
 Type: Int32
@@ -174,8 +137,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PropertySet
+{{ Fill PropertySet Description }}
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases:
+Accepted values: none, all, computerStatus, tasks, securityUpdates, computerSettings, allSecurityModules, antiMalware, webReputation, activityMonitoring, firewall, intrusionPrevention, integrityMonitoring, logInspection, applicationControl, SAP, interfaces, ESXSummary, allVirtualMachineSummaries, azureARMVirtualMachineSummary, azureVMVirtualMachineSummary, ec2VirtualMachineSummary, noConnectorVirtualMachineSummary, vmwareVMVirtualMachineSummary, vcloudVMVirtualMachineSummary, workspaceVirtualMachineSummary, gcpVirtualMachineSummary
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RelayListId
-ID of the relay list that is assigned to the computer. Set to 0, $null or "" to remove any assignment.
+{{ Fill RelayListId Description }}
 
 ```yaml
 Type: Int32

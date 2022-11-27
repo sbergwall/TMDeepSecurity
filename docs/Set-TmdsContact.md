@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-TmdsContact
 
 ## SYNOPSIS
-Modify a contact.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -20,21 +20,21 @@ Set-TmdsContact [-ContactId] <Int32> [[-Description] <String>] [[-EmailAddress] 
 ```
 
 ## DESCRIPTION
-Modify a contact. Any unset elements will be left unchanged. 
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Set-TmdsContact -ContactId 1 -Description "New Description" -EmailAddress "email@company.com"
+PS C:\> {{ Add example code here }}
 ```
 
-Set description and email adress for contact with id 1.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -ContactId
-The ID number of the contact to modify.
+{{ Fill ContactId Description }}
 
 ```yaml
 Type: Int32
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the Contact.
+{{ Fill Description Description }}
 
 ```yaml
 Type: String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Email address of the Contact.
+{{ Fill EmailAddress Description }}
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Locale
-Locale of the Contact.
+{{ Fill Locale Description }}
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileNumber
-Mobile number of the Contact.
+{{ Fill MobileNumber Description }}
 
 ```yaml
 Type: String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the Contact.
+{{ Fill Name Description }}
 
 ```yaml
 Type: String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PagerNumber
-Pager number of the Contact. 
+{{ Fill PagerNumber Description }}
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneNumber
-Phone number of the Contact. 
+{{ Fill PhoneNumber Description }}
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportPDFPassword
-Password that protects the reports that the Contact generates. Ignored when ReportPDFPasswordEnabled is false.
+{{ Fill ReportPDFPassword Description }}
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReportPDFPasswordEnabled
-Controls whether the reports that the Contact generates are password-protected. Set to true to password-protect, and false otherwise. 
+{{ Fill ReportPDFPasswordEnabled Description }}
 
 ```yaml
 Type: Boolean
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleID
-ID of the role assigned to the Contact.
+{{ Fill RoleID Description }}
 
 ```yaml
 Type: Int32

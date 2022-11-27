@@ -1,6 +1,6 @@
 ---
-external help file: Trend-Micro-Deep-Security-help.xml
-Module Name: Trend-Micro-Deep-Security
+external help file: TMDeepSecurity-help.xml
+Module Name: TMDeepSecurity
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-TmdsComputer
 
 ## SYNOPSIS
-Create a new computer. 
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
@@ -19,21 +19,21 @@ New-TmdsComputer [[-Description] <String>] [[-DisplayName] <String>] [[-HostName
 ```
 
 ## DESCRIPTION
-Creates a new computer object in DSM.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> New-TmdsComputer -Description "a description" -DisplayName "dc1.company.com" -HostName "dc1.company.com" -AssetImportanceId 1 -PolicyId 1
+PS C:\> {{ Add example code here }}
 ```
 
-Create a new computer in DSM with Asset Importance 1 and bind policy 1 to the object.
+{{ Add example description here }}
 
 ## PARAMETERS
 
 ### -AssetImportanceId
-ID of the asset importance assigned to the computer.
+{{ Fill AssetImportanceId Description }}
 
 ```yaml
 Type: Int32
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the computer.
+{{ Fill Description Description }}
 
 ```yaml
 Type: String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the computer.
+{{ Fill DisplayName Description }}
 
 ```yaml
 Type: String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-ID of the computer group to which the computer belongs.
+{{ Fill GroupId Description }}
 
 ```yaml
 Type: Int32
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Hostname of the computer.
+{{ Fill HostName Description }}
 
 ```yaml
 Type: String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-ID of the policy assigned to the computer.
+{{ Fill PolicyId Description }}
 
 ```yaml
 Type: Int32
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -RelayListId
-ID of the relay list that is assigned to the computer.
+{{ Fill RelayListId Description }}
 
 ```yaml
 Type: Int32
