@@ -33,7 +33,7 @@ Copyright = '(c) Simon Bergwall. All rights reserved.'
 Description = 'TMDeepSecurity is a Powershell module for interacting with the API for Trend Micro Deep Security Manager.'
 
 # Minimum version of the PowerShell engine required by this module
-# PowerShellVersion = ''
+PowerShellVersion = '7.2'
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''
@@ -98,7 +98,7 @@ PrivateData = @{
         Tags = @('Trend-Micro','Deep-Security','Deep-Security-Manager')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://github.com/sbergwall/TMDeepSecurity/blob/main/LICENSE'
 
         # A URL to the main website for this project.
         ProjectUri = 'https://github.com/sbergwall/TMDeepSecurity'
