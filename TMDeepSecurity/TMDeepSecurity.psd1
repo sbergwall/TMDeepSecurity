@@ -12,7 +12,7 @@
 RootModule = 'TMDeepSecurity.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.1'
+ModuleVersion = '0.0.2'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -21,13 +21,13 @@ ModuleVersion = '0.0.1'
 GUID = '0f9eec09-e97e-4fed-a814-47121dbcfc50'
 
 # Author of this module
-Author = 'simon'
+Author = 'Simon Bergwall'
 
 # Company or vendor of this module
 CompanyName = 'Unknown'
 
 # Copyright statement for this module
-Copyright = '(c) simon. All rights reserved.'
+Copyright = '(c) Simon Bergwall. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'TMDeepSecurity is a Powershell module for interacting with the API for Trend Micro Deep Security Manager.'
@@ -95,13 +95,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @('Trend Micro','Deep Security','Deep Security Manager')
 
         # A URL to the license for this module.
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/sbergwall/TMDeepSecurity'
 
         # A URL to an icon representing this module.
         # IconUri = ''
