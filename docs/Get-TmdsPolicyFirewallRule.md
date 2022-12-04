@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsPolicyFirewallRule
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get firewall rule including policy-level overrides.
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Get-TmdsPolicyFirewallRule -PolicyId <Int32> [-FirewallRuleId <Int32>] [<CommonP
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get firewall rule including policy-level overrides.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsPolicyFirewallRule -PolicyId 1 -FirewallRuleId 5
 ```
 
-{{ Add example description here }}
+Get firewall rule with id 5 for policy with id 1.
 
 ## PARAMETERS
 
 ### -FirewallRuleId
-{{ Fill FirewallRuleId Description }}
+The ID number of the firewall rule.
 
 ```yaml
 Type: Int32
@@ -46,7 +46,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-{{ Fill PolicyId Description }}
+The ID number of the policy.
 
 ```yaml
 Type: Int32

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsPolicy
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get policies.
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Get-TmdsPolicy [-PolicyId <Int32>] [-SettingName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get policies.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsPolicy
 ```
 
-{{ Add example description here }}
+Return all policies.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsPolicy -PolicyId 1 -SettingName "logInspectionSettingSeverityClippingAgentEventSendSyslogLevelMin"
+```
+
+Get the value of setting logInspectionSettingSeverityClippingAgentEventSendSyslogLevelMin for policy with id 1.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Return all policies.
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-{{ Fill PolicyId Description }}
+The ID number of the policy.
 
 ```yaml
 Type: Int32
@@ -67,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingName
-{{ Fill SettingName Description }}
+The name of the policy setting.
 
 ```yaml
 Type: String

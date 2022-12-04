@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsFileList
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get File Lists
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Get-TmdsFileList [-FileListId <Int32[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get File Lists
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsFileList
 ```
 
-{{ Add example description here }}
+Return all File Lists.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsFileList -FileListId 1,2
+```
+
+Return File Lists with id 1 and 2.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Return all File Lists.
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileListId
-{{ Fill FileListId Description }}
+The ID number of the file list.
 
 ```yaml
 Type: Int32[]

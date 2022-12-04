@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsEventBasedTask
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get event based tasks.
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Get-TmdsEventBasedTask [-EventBasedTaskId <Int32[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get event based tasks.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsEventBasedTask
 ```
 
-{{ Add example description here }}
+Return all Event Based Tasks.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsEventBasedTask -EventBasedTaskId 5,7
+```
+
+Return Event Based Task with Id 5 and 7.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Return all Event Based Tasks.
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventBasedTaskId
-{{ Fill EventBasedTaskId Description }}
+The ID number of the event based task.
 
 ```yaml
 Type: Int32[]

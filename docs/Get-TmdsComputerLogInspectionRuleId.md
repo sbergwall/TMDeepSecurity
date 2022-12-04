@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputerLogInspectionRuleId
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get log inspection rule IDs assigned to a computer.
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Get-TmdsComputerLogInspectionRuleId -ComputerId <Int32[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get log inspection rule IDs assigned to a computer.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputerLogInspectionRuleId -ComputerId 1
 ```
 
-{{ Add example description here }}
+Get all log inspection rule IDs assigned to a computer with id 1.
 
 ## PARAMETERS
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+The ID number of the computer.
 
 ```yaml
 Type: Int32[]

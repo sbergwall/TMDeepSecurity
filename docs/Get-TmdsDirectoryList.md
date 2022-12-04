@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsDirectoryList
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get directory lists.
 
 ## SYNTAX
 
@@ -23,21 +23,21 @@ Get-TmdsDirectoryList [-DirectoryListId <Int32[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get directory lists.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsDirectoryList
 ```
 
-{{ Add example description here }}
+Returns all Directory Lists.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Returns all Directory Lists.
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryListId
-{{ Fill DirectoryListId Description }}
+The ID number of the directory list.
 
 ```yaml
 Type: Int32[]

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsContact
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get contacts.
 
 ## SYNTAX
 
@@ -23,21 +23,21 @@ Get-TmdsContact [-ContactId <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get contacts.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsContact
 ```
 
-{{ Add example description here }}
+Gets all contacts.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Returns all contacts.
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactId
-{{ Fill ContactId Description }}
+The ID number of the contact to describe.
 
 ```yaml
 Type: Int32

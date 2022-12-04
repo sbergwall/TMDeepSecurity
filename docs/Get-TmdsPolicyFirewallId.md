@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsPolicyFirewallId
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get firewall rule IDs assigned to a policy.
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Get-TmdsPolicyFirewallId -PolicyId <Int32> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get firewall rule IDs assigned to a policy.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsPolicyFirewallId -PolicyId 1
 ```
 
-{{ Add example description here }}
+Get firewall rule IDs assigned to policy with id 1.
 
 ## PARAMETERS
 
 ### -PolicyId
-{{ Fill PolicyId Description }}
+The ID number of the policy.
 
 ```yaml
 Type: Int32

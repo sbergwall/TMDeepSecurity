@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsFileExtensionList
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get file extension lists.
 
 ## SYNTAX
 
@@ -23,21 +23,28 @@ Get-TmdsFileExtensionList [-FileExtensionListId <Int32[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get file extension lists.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsFileExtensionList
 ```
 
-{{ Add example description here }}
+Return all File Extension Lists
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsFileExtensionList -FileExtensionListId 1
+```
+
+Return File Extension List with Id 1.
 
 ## PARAMETERS
 
 ### -All
-{{ Fill All Description }}
+Return all File Extension Lists
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileExtensionListId
-{{ Fill FileExtensionListId Description }}
+The ID number of the file extension list to describe.
 
 ```yaml
 Type: Int32[]

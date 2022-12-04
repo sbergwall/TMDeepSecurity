@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsPolicyDefaultSetting
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get default policy settings.
 
 ## SYNTAX
 
@@ -23,16 +23,24 @@ Get-TmdsPolicyDefaultSetting [-SettingName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+
+Get default policy settings.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsPolicyDefaultSetting
 ```
 
-{{ Add example description here }}
+Return all default policy settings.
+
+### Example 2
+```powershell
+PS C:\> Get-TmdsPolicyDefaultSetting -SettingName antiMalwareSettingNsxSecurityTaggingOnRemediationFailureEnabled
+```
+
+Return the value of antiMalwareSettingNsxSecurityTaggingOnRemediationFailureEnabled.
 
 ## PARAMETERS
 

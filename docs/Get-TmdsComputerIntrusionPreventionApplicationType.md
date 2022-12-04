@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputerIntrusionPreventionApplicationType
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all intrusion prevention application types assigned to a computer.
 
 ## SYNTAX
 
@@ -18,21 +18,21 @@ Get-TmdsComputerIntrusionPreventionApplicationType -ComputerId <Int32[]> [-Appli
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all intrusion prevention application types assigned to a computer.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputerIntrusionPreventionApplicationType -ComputerId 1
 ```
 
-{{ Add example description here }}
+Get all intrusion prevention application types assigned to computer with id 1.
 
 ## PARAMETERS
 
 ### -ApplicationTypeId
-{{ Fill ApplicationTypeId Description }}
+Application Type Id.
 
 ```yaml
 Type: Int32
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+Computer Id.
 
 ```yaml
 Type: Int32[]

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-TmdsComputerIntrusionPreventionRuleId
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Get all intrusion prevention rule IDs assigned to a computer.
 
 ## SYNTAX
 
@@ -17,21 +17,21 @@ Get-TmdsComputerIntrusionPreventionRuleId -ComputerId <Int32[]> [<CommonParamete
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get all intrusion prevention rule IDs assigned to a computer.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-TmdsComputerIntrusionPreventionRuleId -ComputerId 1
 ```
 
-{{ Add example description here }}
+Get all intrusion prevention rule IDs assigned to a computer with id 1.
 
 ## PARAMETERS
 
 ### -ComputerId
-{{ Fill ComputerId Description }}
+The ID number of the computer.
 
 ```yaml
 Type: Int32[]
