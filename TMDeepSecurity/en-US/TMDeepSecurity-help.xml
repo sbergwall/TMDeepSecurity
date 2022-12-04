@@ -1672,11 +1672,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsComputerIntrusionPreventionRule</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get intrusion prevention rules assigned to a computer.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get intrusion prevention rules assigned to a computer.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1684,7 +1684,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>ComputerId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill ComputerId Description }}</maml:para>
+            <maml:para>The ID number of the computer.s</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -1696,7 +1696,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>IntrusionPreventionRuleId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill IntrusionPreventionRuleId Description }}</maml:para>
+            <maml:para>The ID number of the intrusion prevention rule.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1711,7 +1711,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>ComputerId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill ComputerId Description }}</maml:para>
+          <maml:para>The ID number of the computer.s</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -1723,7 +1723,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>IntrusionPreventionRuleId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill IntrusionPreventionRuleId Description }}</maml:para>
+          <maml:para>The ID number of the intrusion prevention rule.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1761,9 +1761,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsComputerIntrusionPreventionRule -ComputerId 1</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Get all intrusion prevention rules assigned to computer with Id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -1775,11 +1775,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsComputerIntrusionPreventionRuleId</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get all intrusion prevention rule IDs assigned to a computer.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get all intrusion prevention rule IDs assigned to a computer.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1787,7 +1787,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>ComputerId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill ComputerId Description }}</maml:para>
+            <maml:para>The ID number of the computer.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -1802,7 +1802,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>ComputerId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill ComputerId Description }}</maml:para>
+          <maml:para>The ID number of the computer.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -1840,9 +1840,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsComputerIntrusionPreventionRuleId -ComputerId 1</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Get all intrusion prevention rule IDs assigned to a computer with id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -1854,11 +1854,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsComputerLogInspectionRule</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get log inspection rules assigned to a computer.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get log inspection rules assigned to a computer.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1866,7 +1866,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>ComputerId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill ComputerId Description }}</maml:para>
+            <maml:para>The ID number of the computer.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -1878,7 +1878,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>LogInspectionRuleId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill LogInspectionRuleId Description }}</maml:para>
+            <maml:para>The ID number of the log inspection rule.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1893,7 +1893,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>ComputerId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill ComputerId Description }}</maml:para>
+          <maml:para>The ID number of the computer.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -1905,7 +1905,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>LogInspectionRuleId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill LogInspectionRuleId Description }}</maml:para>
+          <maml:para>The ID number of the log inspection rule.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1943,9 +1943,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsComputerLogInspectionRule -ComputerId 1</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Get log inspection rules assigned to computer with id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -1957,11 +1957,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsComputerLogInspectionRuleId</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get log inspection rule IDs assigned to a computer.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get log inspection rule IDs assigned to a computer.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1969,7 +1969,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>ComputerId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill ComputerId Description }}</maml:para>
+            <maml:para>The ID number of the computer.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -1984,7 +1984,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>ComputerId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill ComputerId Description }}</maml:para>
+          <maml:para>The ID number of the computer.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -2022,9 +2022,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsComputerLogInspectionRuleId -ComputerId 1</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Get all log inspection rule IDs assigned to a computer with id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2036,11 +2036,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsContact</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get contacts.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get contacts.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2048,7 +2048,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>{{ Fill All Description }}</maml:para>
+            <maml:para>Returns all contacts.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -2062,7 +2062,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
           <maml:name>ContactId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill ContactId Description }}</maml:para>
+            <maml:para>The ID number of the contact to describe.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -2077,7 +2077,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>{{ Fill All Description }}</maml:para>
+          <maml:para>Returns all contacts.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -2089,7 +2089,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
         <maml:name>ContactId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill ContactId Description }}</maml:para>
+          <maml:para>The ID number of the contact to describe.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -2127,9 +2127,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsContact</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Gets all contacts.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2141,11 +2141,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsDirectoryList</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get directory lists.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get directory lists.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2153,7 +2153,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>{{ Fill All Description }}</maml:para>
+            <maml:para>Returns all Directory Lists.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -2167,7 +2167,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>DirectoryListId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill DirectoryListId Description }}</maml:para>
+            <maml:para>The ID number of the directory list.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -2182,7 +2182,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>{{ Fill All Description }}</maml:para>
+          <maml:para>Returns all Directory Lists.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -2194,7 +2194,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>DirectoryListId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill DirectoryListId Description }}</maml:para>
+          <maml:para>The ID number of the directory list.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -2232,9 +2232,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsDirectoryList</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Returns all Directory Lists.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2246,11 +2246,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsEventBasedTask</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get event based tasks.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get event based tasks.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2258,7 +2258,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>{{ Fill All Description }}</maml:para>
+            <maml:para>Return all Event Based Tasks.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -2272,7 +2272,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>EventBasedTaskId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill EventBasedTaskId Description }}</maml:para>
+            <maml:para>The ID number of the event based task.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -2287,7 +2287,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>{{ Fill All Description }}</maml:para>
+          <maml:para>Return all Event Based Tasks.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -2299,7 +2299,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>EventBasedTaskId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill EventBasedTaskId Description }}</maml:para>
+          <maml:para>The ID number of the event based task.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -2337,9 +2337,16 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsEventBasedTask</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Return all Event Based Tasks.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-TmdsEventBasedTask -EventBasedTaskId 5,7</dev:code>
+        <dev:remarks>
+          <maml:para>Return Event Based Task with Id 5 and 7.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2351,11 +2358,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsFileExtensionList</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get file extension lists.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get file extension lists.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2363,7 +2370,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>{{ Fill All Description }}</maml:para>
+            <maml:para>Return all File Extension Lists</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -2377,7 +2384,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>FileExtensionListId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill FileExtensionListId Description }}</maml:para>
+            <maml:para>The ID number of the file extension list to describe.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -2392,7 +2399,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>{{ Fill All Description }}</maml:para>
+          <maml:para>Return all File Extension Lists</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -2404,7 +2411,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>FileExtensionListId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill FileExtensionListId Description }}</maml:para>
+          <maml:para>The ID number of the file extension list to describe.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -2442,9 +2449,16 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsFileExtensionList</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Return all File Extension Lists</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-TmdsFileExtensionList -FileExtensionListId 1</dev:code>
+        <dev:remarks>
+          <maml:para>Return File Extension List with Id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2456,11 +2470,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsFileList</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get File Lists</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get File Lists</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2468,7 +2482,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>{{ Fill All Description }}</maml:para>
+            <maml:para>Return all File Lists.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -2482,7 +2496,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
           <maml:name>FileListId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill FileListId Description }}</maml:para>
+            <maml:para>The ID number of the file list.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
           <dev:type>
@@ -2497,7 +2511,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>{{ Fill All Description }}</maml:para>
+          <maml:para>Return all File Lists.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -2509,7 +2523,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="Id">
         <maml:name>FileListId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill FileListId Description }}</maml:para>
+          <maml:para>The ID number of the file list.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
         <dev:type>
@@ -2547,9 +2561,16 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsFileList</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Return all File Lists.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-TmdsFileList -FileListId 1,2</dev:code>
+        <dev:remarks>
+          <maml:para>Return File Lists with id 1 and 2.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2561,11 +2582,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsPolicy</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get policies.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get policies.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2573,7 +2594,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>All</maml:name>
           <maml:description>
-            <maml:para>{{ Fill All Description }}</maml:para>
+            <maml:para>Return all policies.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -2587,7 +2608,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
           <maml:name>PolicyId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill PolicyId Description }}</maml:para>
+            <maml:para>The ID number of the policy.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -2599,7 +2620,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SettingName</maml:name>
           <maml:description>
-            <maml:para>{{ Fill SettingName Description }}</maml:para>
+            <maml:para>The name of the policy setting.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2614,7 +2635,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>All</maml:name>
         <maml:description>
-          <maml:para>{{ Fill All Description }}</maml:para>
+          <maml:para>Return all policies.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -2626,7 +2647,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
         <maml:name>PolicyId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill PolicyId Description }}</maml:para>
+          <maml:para>The ID number of the policy.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -2638,7 +2659,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>SettingName</maml:name>
         <maml:description>
-          <maml:para>{{ Fill SettingName Description }}</maml:para>
+          <maml:para>The name of the policy setting.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2676,9 +2697,16 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsPolicy</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Return all policies.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-TmdsPolicy -PolicyId 1 -SettingName "logInspectionSettingSeverityClippingAgentEventSendSyslogLevelMin"</dev:code>
+        <dev:remarks>
+          <maml:para>Get the value of setting logInspectionSettingSeverityClippingAgentEventSendSyslogLevelMin for policy with id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2690,11 +2718,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsPolicyDefaultSetting</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get default policy settings.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get default policy settings.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2781,9 +2809,16 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsPolicyDefaultSetting</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Return all default policy settings.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-TmdsPolicyDefaultSetting -SettingName antiMalwareSettingNsxSecurityTaggingOnRemediationFailureEnabled</dev:code>
+        <dev:remarks>
+          <maml:para>Return the value of antiMalwareSettingNsxSecurityTaggingOnRemediationFailureEnabled.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2795,11 +2830,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsPolicyFirewallId</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get firewall rule IDs assigned to a policy.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get firewall rule IDs assigned to a policy.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2807,7 +2842,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
           <maml:name>PolicyId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill PolicyId Description }}</maml:para>
+            <maml:para>The ID number of the policy.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -2822,7 +2857,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
         <maml:name>PolicyId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill PolicyId Description }}</maml:para>
+          <maml:para>The ID number of the policy.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -2860,9 +2895,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsPolicyFirewallId -PolicyId 1</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Get firewall rule IDs assigned to policy with id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2874,11 +2909,11 @@
       <command:verb>Get</command:verb>
       <command:noun>TmdsPolicyFirewallRule</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Get firewall rule including policy-level overrides.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Get firewall rule including policy-level overrides.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2886,7 +2921,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FirewallRuleId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill FirewallRuleId Description }}</maml:para>
+            <maml:para>The ID number of the firewall rule.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -2898,7 +2933,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
           <maml:name>PolicyId</maml:name>
           <maml:description>
-            <maml:para>{{ Fill PolicyId Description }}</maml:para>
+            <maml:para>The ID number of the policy.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -2913,7 +2948,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FirewallRuleId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill FirewallRuleId Description }}</maml:para>
+          <maml:para>The ID number of the firewall rule.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -2925,7 +2960,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
         <maml:name>PolicyId</maml:name>
         <maml:description>
-          <maml:para>{{ Fill PolicyId Description }}</maml:para>
+          <maml:para>The ID number of the policy.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -2963,9 +2998,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <dev:code>PS C:\&gt; Get-TmdsPolicyFirewallRule -PolicyId 1 -FirewallRuleId 5</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Get firewall rule with id 5 for policy with id 1.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
